@@ -86,6 +86,16 @@ module.exports = function(grunt) {
         files: [
         {expand: true, cwd: 'src/locale/', src: ['*.json'], dest: 'public/locale/'},
         ]
+      },
+      skrollrCSSPublic: {
+        files: [
+        {src: ['src/skrollr.blank.css'], dest: 'public/stylesheets/skrollr.css'},
+        ]
+      },
+      skrollrCSSDev: {
+        files: [
+        {src: ['src/skrollr.blank.css'], dest: 'dev/stylesheets/skrollr.css'},
+        ]
       }
     },
     sass: {                              // Task
@@ -225,6 +235,10 @@ module.exports = function(grunt) {
       copy_jsonPublic: {
         files: ['src/locale/*.json'],
         tasks: ['copy:jsonPublic']
+      },
+      copy_scrollr: {
+        files: ['src/skrollr.blank.css'],
+        tasks: ['copy:skrollrCSSDev', 'copy:skrollrCSSPublic']
       },
       svgmin: {
         files: ['src/assets/**/*.svg'],
