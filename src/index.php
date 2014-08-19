@@ -4,6 +4,7 @@
     <?php include('_head.php') ?>
   </head>
   <body>
+    <div class='bg'></div>
     <!-- Effect Variables -->
     <section id='step-1'>1</section>
     <section id='step-2'>2</section>
@@ -18,13 +19,14 @@
     <section id='step-11'>11</section>
     <section id='step-12'>12</section>
     <section id='step-13'>13</section>
-    <section id='step-14'>14</section>
     <img alt='GoDaddy' src='images/godaddy.min.svg'>
     <img alt='Mad Mimi' src='images/mimi.svg'>
-    <div class='chevron_down'>
-      <img alt='Scroll Down' data-anchor-target='#step-13' data-center-bottom='opacity: 0; transform: translateY(40px)' data-start='opacity[cubic]: 1; transform: translateY(0px)' src='images/chevron_down.min.svg'>
-    </div>
-    <p data-anchor-target='#step-1' data-center-bottom='opacity: 0; transform: translateY(40px)' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)'>MMGD.</p>
+    <a class='chevron_down' href='#'>
+      <img alt='Scroll Down' data-anchor-target='#step-12' data-center-bottom='opacity: 0; transform: translateY(40px)' data-start='opacity[cubic]: 1; transform: translateY(-10px)' src='images/chevron_down.min.svg'>
+    </a>
+    <p data-anchor-target='#step-1' data-center-bottom='opacity: 0; transform: translateY(40px)' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)'>
+      <span class='large'>MMGD.</span>
+    </p>
     <p data-anchor-target='#step-2' data-center-bottom='opacity: 0; transform: translateY(40px)' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)'>
       <span>The GoDaddy Guy zoomed around with a frown</span>
       <span class='godaddy'>"I’ve got the excitement, I’m a man about town"</span>
@@ -65,14 +67,14 @@
       <span class='godaddy'>"I ain't boring, I'm awesome, you know!</span>
       <span class='godaddy'>And I help small businesses get online and grow"</span>
     </p>
-    <p data-anchor-target='#step-13' data-center-bottom='opacity: 0; transform: translateY(40px)' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)'>
+    <p data-anchor-target='#step-12' data-center-bottom='opacity: 0; transform: translateY(40px)' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)'>
       <span class='godaddy'>"Let's hang out Mimi"</span>
       <span class='godaddy'>"We'll help people together!"</span>
       <span class='godaddy'>Get online and get heard</span>
       <span class='godaddy'>Forever and ever!”</span>
     </p>
-    <p data-anchor-target='#step-14' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)' data-end='opacity: 0; transform: translateY(40px)'>
-      <span>GoDaddy acquires Mad Mimi <a href="#">Read more</a></span>
+    <p data-anchor-target='#step-13' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)' data-end='opacity: 0; transform: translateY(40px)'>
+      <span>GoDaddy acquires Mad Mimi — <a href="#">Read more</a></span>
     </p>
     <?php include('_bottom.php') ?>
   </body>

@@ -3,6 +3,7 @@
   %head
     <?php include('_head.php') ?>
   %body
+    .bg
     / Effect Variables
     - center = 'opacity[cubic]: 1; transform: translateY(0px)'
     - top = 'opacity: 0; transform: translateY(-40px)'
@@ -20,12 +21,12 @@
     %section#step-11 11
     %section#step-12 12
     %section#step-13 13
-    %section#step-14 14
     %img{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
     %img{:src=> "images/mimi.svg", :alt => "Mad Mimi"}
-    .chevron_down
-      %img{:src=> "images/chevron_down.min.svg", :alt => "Scroll Down", :"data-start" => "opacity[cubic]: 1; transform: translateY(0px)", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-13"}
-    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-1"} MMGD.
+    %a.chevron_down{:href => '#'}
+      %img{:src=> "images/chevron_down.min.svg", :alt => "Scroll Down", :"data-start" => "opacity[cubic]: 1; transform: translateY(-10px)", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-12"}
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-1"}
+      %span.large MMGD.
     %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-2"}
       %span The GoDaddy Guy zoomed around with a frown
       %span.godaddy "I’ve got the excitement, I’m a man about town"
@@ -56,11 +57,11 @@
     %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-11"}
       %span.godaddy "I ain't boring, I'm awesome, you know!
       %span.godaddy And I help small businesses get online and grow"
-    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-13"}
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-12"}
       %span.godaddy "Let's hang out Mimi"
       %span.godaddy "We'll help people together!"
       %span.godaddy Get online and get heard
       %span.godaddy Forever and ever!”
-    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-end" => "#{bottom}", :"data-anchor-target" => "#step-14"}
-      %span GoDaddy acquires Mad Mimi <a href="#">Read more</a>
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-end" => "#{bottom}", :"data-anchor-target" => "#step-13"}
+      %span GoDaddy acquires Mad Mimi — <a href="#">Read more</a>
     <?php include('_bottom.php') ?>
