@@ -18,8 +18,10 @@
     <section id='step-11'></section>
     <section id='step-12'></section>
     <section id='step-13'></section>
-    <img alt='GoDaddy' id='godaddy_guy' src='images/godaddy.min.svg'>
-    <img alt='Mad Mimi' id='mimi' src='images/mimi.svg'>
+    <div class='scene'>
+      <img alt='GoDaddy' id='godaddy_guy' src='images/godaddy.min.svg'>
+      <img alt='Mad Mimi' id='mimi' src='images/mimi.svg'>
+    </div>
     <a alt='Scroll Down' class='chevron_down' data-anchor-target='#step-12' href='#'>
       <img src='images/chevron_down.min.svg'>
     </a>

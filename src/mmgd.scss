@@ -39,8 +39,6 @@ body {
 section {
   height: 1800px;
   width: 100%;
-  transform: translateY(0px);
-  padding: 20px 0 0 20px;
 }
 
 p {
@@ -75,7 +73,7 @@ p {
 }
 
 
-body > img {
+.scene img {
   position: fixed;
   top: 50%;
   margin-top: -150px;
@@ -115,6 +113,28 @@ body > p:first-of-type {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 44%;  
+    font-size: 44%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .scene img {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 10%;
+  }
+  p {
+    margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    width: 100%;
   }
 }
