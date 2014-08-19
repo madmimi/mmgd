@@ -21,8 +21,8 @@
     <section id='step-13'>13</section>
     <img alt='GoDaddy' src='images/godaddy.min.svg'>
     <img alt='Mad Mimi' src='images/mimi.svg'>
-    <a class='chevron_down' href='#'>
-      <img alt='Scroll Down' data-anchor-target='#step-12' data-center-bottom='opacity: 0; transform: translateY(40px)' data-start='opacity[cubic]: 1; transform: translateY(-10px)' src='images/chevron_down.min.svg'>
+    <a alt='Scroll Down' class='chevron_down' data-200-center-bottom='opacity: 0; transform: translateY(40px)' data-anchor-target='#step-12' data-start='opacity[cubic]: 1; transform: translateY(-10px)' href='#'>
+      <img src='images/chevron_down.min.svg'>
     </a>
     <p data-anchor-target='#step-1' data-center-bottom='opacity: 0; transform: translateY(40px)' data-center-top='opacity: 0; transform: translateY(-40px)' data-center='opacity[cubic]: 1; transform: translateY(0px)'>
       <span class='large'>MMGD.</span>
