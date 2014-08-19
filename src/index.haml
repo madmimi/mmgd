@@ -1,0 +1,66 @@
+!!! 5
+%html.no-js
+  %head
+    <?php include('_head.php') ?>
+  %body
+    / Effect Variables
+    - center = 'opacity[cubic]: 1; transform: translateY(0px)'
+    - top = 'opacity: 0; transform: translateY(-40px)'
+    - bottom='opacity: 0; transform: translateY(40px)'
+    %section#step-1 1
+    %section#step-2 2
+    %section#step-3 3
+    %section#step-4 4
+    %section#step-5 5
+    %section#step-6 6
+    %section#step-7 7
+    %section#step-8 8
+    %section#step-9 9
+    %section#step-10 10
+    %section#step-11 11
+    %section#step-12 12
+    %section#step-13 13
+    %section#step-14 14
+    %img{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
+    %img{:src=> "images/mimi.svg", :alt => "Mad Mimi"}
+    .chevron_down
+      %img{:src=> "images/chevron_down.min.svg", :alt => "Scroll Down", :"data-start" => "opacity[cubic]: 1; transform: translateY(0px)", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-13"}
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-1"} MMGD.
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-2"}
+      %span The GoDaddy Guy zoomed around with a frown
+      %span.godaddy "I’ve got the excitement, I’m a man about town"
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-3"}
+      %span.godaddy "I have tons of fun, and I help people too"
+      %span.godaddy "but there's something missing, and I’m a little bit blue."
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-4"}
+      %span While his mind was adrift like a leaf on a river,
+      %span A distant sound set his ears aquiver.
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-5"}
+      %span.godaddy "Hark! What's that beautiful singing?
+      %span.godaddy "A melody charming and simple and ringing."
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-6"}
+      %span.godaddy "I must meet that singer, my heart is athumping."
+      %span.godaddy "I have an idea, she's what I've been missing!"
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-7"}
+      %span And under a tree, a delightful sight,
+      %span Mad Mimi sits singing clear and bright.
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-8"}
+      %span.godaddy "Hey there, ahem, cough cough, who are you?
+      %span.godaddy "You seem so special, what is it you do?"
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-9"}
+      %span.mimi "I delight readers with beautiful emails,
+      %span.mimi I'm sugar and spice and puppy dog tails"
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-10"}
+      %span.mimi I'm easy to read newsletters and more,
+      %span.mimi I'm fun and feisty and I don't talk to bores."
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-11"}
+      %span.godaddy "I ain't boring, I'm awesome, you know!
+      %span.godaddy And I help small businesses get online and grow"
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-center-bottom" => "#{bottom}", :"data-anchor-target" => "#step-13"}
+      %span.godaddy "Let's hang out Mimi"
+      %span.godaddy "We'll help people together!"
+      %span.godaddy Get online and get heard
+      %span.godaddy Forever and ever!”
+    %p{:"data-center" => "#{center}", :"data-center-top" => "#{top}", :"data-end" => "#{bottom}", :"data-anchor-target" => "#step-14"}
+      %span GoDaddy acquires Mad Mimi <a href="#">Read more</a>
+    <?php include('_bottom.php') ?>
