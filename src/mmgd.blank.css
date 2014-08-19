@@ -52,8 +52,6 @@ html {
 }
 
 body {
-  background-image: radial-gradient(ellipse, white, #eeeeee);
-  background-position: fixed;
   font-size: 3.6rem;
   font-family: "omnes-pro", "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", "Helvetica", Arial, sans-serif;
   font-weight: 200;
@@ -61,6 +59,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #373a40;
   line-height: 1.36;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: radial-gradient(ellipse, white, #eeeeee);
+  background-position: fixed;
+  z-index: 0;
 }
 
 section {
@@ -88,6 +97,9 @@ p span.mimi {
 p span.godaddy {
   color: #7db701;
 }
+p span.large {
+  font-size: 4.8rem;
+}
 
 body > img {
   position: fixed;
@@ -101,4 +113,15 @@ body > img {
   left: 90%;
   top: 50%;
   margin-top: -55px;
+}
+
+body > p:last-of-type span a,
+body > p:first-of-type span a {
+  font-weight: bold;
+}
+html[data-ua*="AppleWebKit"] body > p:last-of-type span, html[data-ua*="AppleWebKit"]
+body > p:first-of-type span {
+  background: linear-gradient(to right, #7db701, #ff234e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
