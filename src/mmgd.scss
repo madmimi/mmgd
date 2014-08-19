@@ -1,0 +1,70 @@
+@import "vars";
+@import "mixins";
+@import "mmgd__keyframes";
+@import "reset";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: radial-gradient(ellipse, white, #eee);
+  background-position: fixed;
+  // , url(../images/bg@2x.png)
+  font-size: $default-font-size;
+  font-family: $fbody;
+  font-weight: $weight-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $default-text-color;
+  line-height: 1.36;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  box-shadow: inset 0 0 0 3px red;
+  transform: translateY(0px);
+  padding: 20px 0 0 20px;
+}
+
+p {
+  position: fixed;
+  opacity: 0;
+  top: 50%;
+  margin-top: - $default-font-size * 2;
+  vertical-align: middle;
+  padding-left: 38%;
+  span {
+    display: block;
+    &.mimi {
+      color: $mimi;
+    }
+    &.godaddy {
+      color: $godaddy;
+    }
+  }
+}
+
+
+body > img {
+  position: fixed;
+  top: 50%;
+  margin-top: -150px;
+  left: 20%;
+}
+
+.chevron_down {
+  position: fixed;
+  left: 90%;
+  top: 50%;
+  margin-top: -55px;
+}
