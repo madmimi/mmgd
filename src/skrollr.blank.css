@@ -18,7 +18,6 @@ p.standard {
     transform: translateY(40px);
   }
 }
-
 p.start {
   -skrollr-animation-name: startParagraph;
 }
@@ -34,7 +33,6 @@ p.start {
     transform: translateY(40px);
   }
 }
-
 p.end {
   -skrollr-animation-name: endParagraph;
 }
@@ -50,7 +48,6 @@ p.end {
     transform: translateY(-40px);
   }
 }
-
 .chevron_down {
   -skrollr-animation-name: chevron;
 }
@@ -66,7 +63,6 @@ p.end {
     transform: translateY(40px);
   }
 }
-
 #godaddy_guy {
   -skrollr-animation-name: godaddyGuy;
 }
@@ -137,7 +133,6 @@ p.end {
     transform: scale(1) translate(-120px, 0px);
   }
 }
-
 #mimi {
   -skrollr-animation-name: mimi;
 }
