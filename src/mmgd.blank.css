@@ -80,8 +80,8 @@ section {
 p {
   position: fixed;
   opacity: 0;
-  top: 50%;
-  margin-top: -7.2rem;
+  top: 40%;
+  margin-top: -10.8rem;
   vertical-align: middle;
   padding-left: 44%;
 }
@@ -97,6 +97,14 @@ p span.godaddy {
 p span.large {
   font-size: 4.8rem;
 }
+p.start {
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+}
+p.start span {
+  display: inline-block;
+}
 p.finale {
   margin-top: -150px;
 }
@@ -108,6 +116,9 @@ p.finale span:nth-of-type(4) {
   margin-left: 200px;
 }
 
+.scene {
+  z-index: 5;
+}
 .scene img {
   position: fixed;
   top: 50%;
@@ -119,7 +130,27 @@ p.finale span:nth-of-type(4) {
   position: fixed;
   left: 50%;
   top: 80%;
-  margin-left: -30px;
+  margin-left: -22px;
+  z-index: 100;
+}
+
+.bg_scene {
+  position: fixed;
+  top: 50%;
+  left: 44%;
+}
+.bg_scene svg {
+  position: fixed;
+  width: 100%;
+  max-width: 500px;
+}
+.bg_scene #gd_bg svg {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+}
+.bg_scene #mm_bg svg {
+  stroke-dasharray: 2400;
+  stroke-dashoffset: 2400;
 }
 
 body > p:last-of-type span a,
@@ -149,6 +180,14 @@ body > p:first-of-type span {
   }
 }
 @media screen and (max-width: 1023px) {
+  .scene {
+    transform: scale(0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10%;
+  }
+
   .scene img {
     left: 0;
     right: 0;
@@ -158,9 +197,54 @@ body > p:first-of-type span {
 
   p {
     margin-top: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    text-align: left;
     width: 100%;
+  }
+  p.standard span:first-of-type {
+    margin-bottom: 12px;
+  }
+  p.finale {
+    margin-top: -50px;
+  }
+  p.finale span:first-of-type {
+    margin-bottom: 0;
+  }
+  p.finale span:nth-of-type(3) {
+    margin-top: 30px;
+  }
+  p.finale span:nth-of-type(3),
+  p.finale span:nth-of-type(4) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 32%;
+  }
+
+  .scene {
+    transform: scale(0.45);
+  }
+
+  .chevron_down {
+    top: 75%;
+  }
+
+  p {
+    top: 44%;
+  }
+  p.finale {
+    margin-top: 0;
+  }
+}
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 50%;
+  }
+
+  .scene {
+    transform: scale(0.5);
   }
 }

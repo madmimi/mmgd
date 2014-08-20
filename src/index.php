@@ -5,22 +5,17 @@
   </head>
   <body>
     <div class='bg'></div>
-    <section id='step-1'></section>
-    <section id='step-2'></section>
-    <section id='step-3'></section>
-    <section id='step-4'></section>
-    <section id='step-5'></section>
-    <section id='step-6'></section>
-    <section id='step-7'></section>
-    <section id='step-8'></section>
-    <section id='step-9'></section>
-    <section id='step-10'></section>
-    <section id='step-11'></section>
-    <section id='step-12'></section>
-    <section id='step-13'></section>
     <div class='scene'>
       <img alt='GoDaddy' id='godaddy_guy' src='images/godaddy.min.svg'>
-      <img alt='Mad Mimi' id='mimi' src='images/mimi.svg'>
+      <img alt='Mad Mimi' height='214' id='mimi' src='images/mimi@2x.png' width='143'>
+    </div>
+    <div class='bg_scene'>
+      <div id='gd_bg'>
+        <?php include('images/gd_bg.min.svg') ?>
+      </div>
+      <div id='mm_bg'>
+        <?php include('images/mm_bg.min.svg') ?>
+      </div>
     </div>
     <a alt='Scroll Down' class='chevron_down' data-anchor-target='#step-12' href='#'>
       <img src='images/chevron_down.min.svg'>
@@ -77,6 +72,19 @@
     <p class='end' data-anchor-target='#step-13'>
       <span>GoDaddy acquires Mad Mimi — <a href="#">Read more</a></span>
     </p>
+    <section id='step-1'></section>
+    <section id='step-2'></section>
+    <section id='step-3'></section>
+    <section id='step-4'></section>
+    <section id='step-5'></section>
+    <section id='step-6'></section>
+    <section id='step-7'></section>
+    <section id='step-8'></section>
+    <section id='step-9'></section>
+    <section id='step-10'></section>
+    <section id='step-11'></section>
+    <section id='step-12'></section>
+    <section id='step-13'></section>
     <?php include('_bottom.php') ?>
   </body>
 </html>

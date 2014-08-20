@@ -53,11 +53,15 @@ p.end {
 
 @-skrollr-keyframes chevron {
   start {
-    opacity#{"[cubic]"}: 1;
+    opacity#{"[quadratic]"}: 1;
     transform: translateY(-10px);
   }
+  3200-center-bottom {
+    opacity#{"[quadratic]"}: 1;
+    transform: translateY(20px);
+  }
   200-center-bottom {
-    opacity#{"[cubic]"}: 0;
+    opacity#{"[quadratic]"}: 0;
     transform: translateY(40px);
   }
 }
@@ -65,58 +69,59 @@ p.end {
 #godaddy_guy {
   -skrollr-animation-name: godaddyGuy;
 }
+
 @-skrollr-keyframes godaddyGuy {
   start {
     opacity#{"[cubic]"}: 0;
-    transform: scale(0.75) translate(0px,0px);
+    transform: scale(0.75) translate(0px,0px) translateZ(0px);
   }
   2100 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(0px,0px);
+    transform: scale(1) translate(0px,0px) translateZ(0px);
   }
   7000 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(0px,0px);
+    transform: scale(1) translate(0px,0px) translateZ(0px);
   }
   7500 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1.1) translate(50px,0px);
+    transform: scale(1.1) translate(50px,0px) translateZ(0px);
   }
   10400 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1.1) translate(50px,0px);
+    transform: scale(1.1) translate(50px,0px) translateZ(0px);
   }
   11300 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(0.75) translate(-150px,-60px);
+    transform: scale(0.75) translate(-150px,-60px) translateZ(0px);
   }
   11400 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(0.75) translate(-150px,-60px);
+    transform: scale(0.75) translate(-150px,-60px) translateZ(0px);
   }
   12300 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(0.75) translate(-150px,-60px);
+    transform: scale(0.75) translate(-150px,-60px) translateZ(0px);
   }
   12600 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(0.85) translate(-150px,-60px);
+    transform: scale(0.85) translate(-150px,-60px) translateZ(0px);
   }
   17800 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(0.85) translate(-150px,-60px);
+    transform: scale(0.85) translate(-150px,-60px) translateZ(0px);
   }
   18100 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(-150px,-60px);
+    transform: scale(1) translate(-150px,-60px) translateZ(0px);
   }
   19500 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(-150px,-60px);
+    transform: scale(1) translate(-150px,-60px) translateZ(0px);
   }
   20000 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(-120px,0px);
+    transform: scale(1) translate(-120px,0px) translateZ(0px);
   }
 }
 
@@ -124,33 +129,72 @@ p.end {
 #mimi {
   -skrollr-animation-name: mimi;
 }
+
 @-skrollr-keyframes mimi {
   start {
     opacity#{"[cubic]"}: 0;
-    transform: scale(0.5) translate(100px,80px);
+    transform: scale(0.5) translate(100px,80px) translateZ(0px);
   }
   10900 {
     opacity#{"[cubic]"}: 0;
-    transform: scale(0.5) translate(100px,80px);
+    transform: scale(0.5) translate(100px,80px) translateZ(0px);
   }
   11400 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(50px,40px);
+    transform: scale(1) translate(50px,40px) translateZ(0px);
   }
   13400 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1) translate(50px,40px);
+    transform: scale(1) translate(50px,40px) translateZ(0px);
   }
   13900 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1.2) translate(50px,40px);
+    transform: scale(1.2) translate(50px,40px) translateZ(0px);
   }
   21180 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1.2) translate(50px,40px);
+    transform: scale(1.2) translate(50px,40px) translateZ(0px);
   }
   21970 {
     opacity#{"[cubic]"}: 1;
-    transform: scale(1.2) translate(50px,0px);
+    transform: scale(1.2) translate(50px,0px) translateZ(0px);
+  }
+}
+
+#gd_bg svg {
+  -skrollr-animation-name: gdBg;
+}
+
+@-skrollr-keyframes gdBg {
+  start {
+    stroke-dashoffset#{"[cubic]"}: 3000;
+  }
+  3000 {
+    stroke-dashoffset#{"[cubic]"}: 0;
+  }
+  6000 {
+    stroke-dashoffset#{"[cubic]"}: 3000;
+  }
+}
+
+#mm_bg svg {
+  -skrollr-animation-name: mmBg;
+}
+
+@-skrollr-keyframes mmBg {
+  start {
+    stroke-dashoffset#{"[cubic]"}: 2400;
+  }
+  10000 {
+    stroke-dashoffset#{"[cubic]"}: 2400;
+  }
+  12000 {
+    stroke-dashoffset#{"[cubic]"}: 0;
+  }
+  16200 {
+    stroke-dashoffset#{"[cubic]"}: 0;
+  }
+  17800 {
+    stroke-dashoffset#{"[cubic]"}: 2400;
   }
 }

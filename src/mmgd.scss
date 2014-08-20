@@ -44,8 +44,8 @@ section {
 p {
   position: fixed;
   opacity: 0;
-  top: 50%;
-  margin-top: - $default-font-size * 2;
+  top: 40%;
+  margin-top: - $default-font-size * 3;
   vertical-align: middle;
   padding-left: 44%;
   span {
@@ -60,6 +60,14 @@ p {
       font-size: $large-font-size;
     }
   }
+  &.start {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+    span {
+      display: inline-block;
+    }
+  }
   &.finale {
     margin-top: -150px;
     span:nth-of-type(3) {
@@ -72,19 +80,45 @@ p {
   }
 }
 
-
-.scene img {
-  position: fixed;
-  top: 50%;
-  margin-top: -150px;
-  left: 20%;
+.scene {
+  z-index: 5;
+  img {
+    position: fixed;
+    top: 50%;
+    margin-top: -150px;
+    left: 20%;
+  }
 }
 
 .chevron_down {
   position: fixed;
   left: 50%;
   top: 80%;
-  margin-left: -30px;
+  margin-left: -22px;
+  z-index: 100;
+}
+
+.bg_scene {
+  position: fixed;
+  top: 50%;
+  left: 44%;
+  svg {
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+  }
+  #gd_bg {
+    svg {
+      stroke-dasharray: 3000;
+      stroke-dashoffset: 3000;
+    }
+  }
+  #mm_bg {
+    svg {
+      stroke-dasharray: 2400;
+      stroke-dashoffset: 2400;
+    }
+  }
 }
 
 
@@ -124,6 +158,13 @@ body > p:first-of-type {
 }
 
 @media screen and (max-width: 1023px) {
+  .scene {
+    transform: scale(0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10%;
+  }
   .scene img {
     left: 0;
     right: 0;
@@ -132,9 +173,59 @@ body > p:first-of-type {
   }
   p {
     margin-top: 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
+    padding-left: 16%;
+    padding-right: 16%;
+    text-align: left;
     width: 100%;
+    &.standard {
+      span:first-of-type {
+        margin-bottom: 12px;
+      }
+    }
+    &.finale {
+      margin-top: -50px;
+      span:first-of-type {
+        margin-bottom: 0;
+      }
+      span:nth-of-type(3) {
+        margin-top: 30px;
+      }
+      span:nth-of-type(3),
+      span:nth-of-type(4) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 32%;
+  }
+  .scene {
+    transform: scale(0.45);
+  }
+  .chevron_down {
+    top: 75%;
+  }
+  // .scene img {
+  //   top: 10%;
+  // }
+
+  p {
+    top: 44%;
+    &.finale {
+      margin-top: 0;
+    }
+  }
+}
+
+
+@media screen and (max-device-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 50%;
+  }
+  .scene {
+    transform: scale(0.5);
   }
 }

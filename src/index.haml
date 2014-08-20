@@ -4,22 +4,14 @@
     <?php include('_head.php') ?>
   %body
     .bg
-    %section#step-1
-    %section#step-2
-    %section#step-3
-    %section#step-4
-    %section#step-5
-    %section#step-6
-    %section#step-7
-    %section#step-8
-    %section#step-9
-    %section#step-10
-    %section#step-11
-    %section#step-12
-    %section#step-13
     .scene
       %img#godaddy_guy{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
-      %img#mimi{:src=> "images/mimi.svg", :alt => "Mad Mimi"}
+      %img#mimi{:src=> "images/mimi@2x.png", :alt => "Mad Mimi", :width => "143", :height => "214"}
+    .bg_scene
+      #gd_bg
+        <?php include('images/gd_bg.min.svg') ?>
+      #mm_bg
+        <?php include('images/mm_bg.min.svg') ?>
     %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
       %img{:src=> "images/chevron_down.min.svg"}
     %p.start{:"data-anchor-target" => "#step-1"}
@@ -61,4 +53,17 @@
       %span.godaddy Forever and ever!”
     %p.end{:"data-anchor-target" => "#step-13"}
       %span GoDaddy acquires Mad Mimi — <a href="#">Read more</a>
+    %section#step-1
+    %section#step-2
+    %section#step-3
+    %section#step-4
+    %section#step-5
+    %section#step-6
+    %section#step-7
+    %section#step-8
+    %section#step-9
+    %section#step-10
+    %section#step-11
+    %section#step-12
+    %section#step-13
     <?php include('_bottom.php') ?>

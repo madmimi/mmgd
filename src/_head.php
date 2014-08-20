@@ -1,9 +1,10 @@
 <meta content='text/html; charset=UTF-8' http-equiv='Content-type'>
-<meta content='width=device-width, initial-scale=0.5, user-scalable=no, minimal-ui' name='viewport'>
+<meta content='width=device-width, user-scalable=no, minimal-ui' name='viewport'>
 <meta content='yes' name='apple-mobile-web-app-capable'>
 <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
 <title>MMGD.</title>
 <meta content='MMGD.' property='og:title'>
+<meta content='A message from GoDaddy' property='og:description'>
 <script src='//use.typekit.net/fho6fcu.js' type='text/javascript'></script>
 <script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
 <link href='stylesheets/mmgd.prefixed.css' media='screen' rel='stylesheet' type='text/css'>
