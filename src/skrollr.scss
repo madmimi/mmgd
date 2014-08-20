@@ -54,15 +54,13 @@ p.end {
 @-skrollr-keyframes chevron {
   start {
     opacity#{"[quadratic]"}: 1;
-    transform: translateY(-10px);
+    transform-origin: top;
+    transform: translateY(-10px) scaleY(1);
   }
-  3200-center-bottom {
-    opacity#{"[quadratic]"}: 1;
-    transform: translateY(20px);
-  }
-  200-center-bottom {
+  1500 {
     opacity#{"[quadratic]"}: 0;
-    transform: translateY(40px);
+    transform-origin: top;
+    transform: translateY(40px) scaleY(2.5);
   }
 }
 

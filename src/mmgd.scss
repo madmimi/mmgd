@@ -69,7 +69,7 @@ p {
     }
   }
   &.finale {
-    margin-top: -150px;
+    margin-top: -90px;
     span:nth-of-type(3) {
       margin-top: 50px;
     }
@@ -77,6 +77,9 @@ p {
     span:nth-of-type(4) {
       margin-left: 200px;
     }
+  }
+  &.end {
+    margin-top: 30px;
   }
 }
 
@@ -106,6 +109,12 @@ p {
     position: fixed;
     width: 100%;
     max-width: 500px;
+  }
+  #gd_bg,
+  #mm_bg {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   #gd_bg {
     svg {
@@ -186,8 +195,11 @@ body > p:first-of-type {
     margin-top: 0;
     padding-left: 16%;
     padding-right: 16%;
-    text-align: left;
     width: 100%;
+    text-align: center;
+    &.start {
+      padding-right: 0;
+    }
     &.standard {
       span:first-of-type {
         margin-bottom: 4px;
@@ -209,12 +221,12 @@ body > p:first-of-type {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   html {
     font-size: 32%;
   }
   .scene {
-    transform: scale(0.45);
+    transform: scale(0.4);
   }
   .chevron_down {
     top: 75%;
@@ -224,11 +236,15 @@ body > p:first-of-type {
   // }
 
   p {
-    top: 44%;
-    padding-left: 3%;
-    padding-right: 3%;
+    top: 39%;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
     &.finale {
       margin-top: 0;
+      span:nth-of-type(3) {
+        margin-top: 6px;
+      }
     }
   }
 }

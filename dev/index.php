@@ -70,7 +70,8 @@
       <span class='godaddy'>Forever and ever!”</span>
     </p>
     <p class='end' data-anchor-target='#step-13'>
-      <span>GoDaddy acquires Mad Mimi — <a href="#">Read more</a></span>
+      <span>GoDaddy acquires Mad Mimi</span>
+      <span>— <a href="#">Read more</a></span>
     </p>
     <section id='step-1'></section>
     <section id='step-2'></section>
