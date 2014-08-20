@@ -164,12 +164,23 @@ body > p:first-of-type {
     left: 0;
     right: 0;
     top: 10%;
+    img {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 10%;
+    }
   }
-  .scene img {
+  .bg_scene {
+    margin: 0 auto;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    top: 10%;
+    > div {
+      text-align: center;
+      svg {
+        position: static;
+      }
+    }
   }
   p {
     margin-top: 0;
@@ -179,7 +190,7 @@ body > p:first-of-type {
     width: 100%;
     &.standard {
       span:first-of-type {
-        margin-bottom: 12px;
+        margin-bottom: 4px;
       }
     }
     &.finale {
@@ -214,6 +225,8 @@ body > p:first-of-type {
 
   p {
     top: 44%;
+    padding-left: 3%;
+    padding-right: 3%;
     &.finale {
       margin-top: 0;
     }
