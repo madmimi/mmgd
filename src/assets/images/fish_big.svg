@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="21px" viewBox="0 0 41 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>fish_big</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fish_big" sketch:type="MSArtboardGroup" stroke-linecap="round" stroke="#646464" stroke-linejoin="round">
+            <g id="fish" sketch:type="MSLayerGroup" transform="translate(22.500000, 9.000000) rotate(-15.000000) translate(-22.500000, -9.000000) translate(7.000000, 3.000000)">
+                <path d="M0.00625136092,2.83160359 L0.00625136092,12.0505541 L6.33254015,7.27653524 C6.33254015,7.27653524 17.7196043,19.3625383 30.6807261,6.34670537 C17.6142962,-6.25612233 7.02978433,5.05406942 7.02978433,5.05406942 L0.00625136092,2.83160359 Z" id="Path-37" sketch:type="MSShapeGroup"></path>
+                <path d="M20.4391344,7.83416666 C20.4391344,7.83416666 21.8311448,12.0387854 23.8200688,11.1090168" id="Path-37" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-9" sketch:type="MSShapeGroup" cx="24" cy="6" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
