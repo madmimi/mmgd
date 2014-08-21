@@ -3,7 +3,9 @@
   %head
     <?php include('_head.php') ?>
   %body
-    .bg
+    #bg.bg
+    #bg_gd.bg
+    #bg_mm.bg
     .scene
       %img#godaddy_guy{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
       %img#mimi{:src=> "images/mimi@2x.png", :alt => "Mad Mimi", :width => "143", :height => "214"}
@@ -12,6 +14,22 @@
         <?php include('images/gd_bg.min.svg') ?>
       #mm_bg
         <?php include('images/mm_bg.min.svg') ?>
+      #gd_car
+        <?php include('images/gd_car.min.svg') ?>
+      #gd_glasses
+        <?php include('images/gd_glasses.min.svg') ?>
+      #gd_star
+        <?php include('images/gd_star.min.svg') ?>
+      #gd_plate
+        <?php include('images/gd_plate.min.svg') ?>
+      #leaf
+        <?php include('images/leaf.min.svg') ?>
+      #river
+        <?php include('images/river.min.svg') ?>
+      #fish_big
+        <?php include('images/fish_big.min.svg') ?>
+      #fish_small
+        <?php include('images/fish_small.min.svg') ?>
     %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
       %img{:src=> "images/chevron_down.min.svg"}
     %p.start{:"data-anchor-target" => "#step-1"}
@@ -67,4 +85,5 @@
     %section#step-11
     %section#step-12
     %section#step-13
+    %span &copy; 2014 GoDaddy.com, LLC
     <?php include('_bottom.php') ?>

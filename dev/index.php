@@ -4,7 +4,9 @@
     <?php include('_head.php') ?>
   </head>
   <body>
-    <div class='bg'></div>
+    <div class='bg' id='bg'></div>
+    <div class='bg' id='bg_gd'></div>
+    <div class='bg' id='bg_mm'></div>
     <div class='scene'>
       <img alt='GoDaddy' id='godaddy_guy' src='images/godaddy.min.svg'>
       <img alt='Mad Mimi' height='214' id='mimi' src='images/mimi@2x.png' width='143'>
@@ -15,6 +17,30 @@
       </div>
       <div id='mm_bg'>
         <?php include('images/mm_bg.min.svg') ?>
+      </div>
+      <div id='gd_car'>
+        <?php include('images/gd_car.min.svg') ?>
+      </div>
+      <div id='gd_glasses'>
+        <?php include('images/gd_glasses.min.svg') ?>
+      </div>
+      <div id='gd_star'>
+        <?php include('images/gd_star.min.svg') ?>
+      </div>
+      <div id='gd_plate'>
+        <?php include('images/gd_plate.min.svg') ?>
+      </div>
+      <div id='leaf'>
+        <?php include('images/leaf.min.svg') ?>
+      </div>
+      <div id='river'>
+        <?php include('images/river.min.svg') ?>
+      </div>
+      <div id='fish_big'>
+        <?php include('images/fish_big.min.svg') ?>
+      </div>
+      <div id='fish_small'>
+        <?php include('images/fish_small.min.svg') ?>
       </div>
     </div>
     <a alt='Scroll Down' class='chevron_down' data-anchor-target='#step-12' href='#'>
@@ -86,6 +112,7 @@
     <section id='step-11'></section>
     <section id='step-12'></section>
     <section id='step-13'></section>
+    <span>&copy; 2014 GoDaddy.com, LLC</span>
     <?php include('_bottom.php') ?>
   </body>
 </html>

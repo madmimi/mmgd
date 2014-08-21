@@ -224,3 +224,35 @@ p.end {
     stroke-dashoffset[cubic]: 2400;
   }
 }
+
+#bg_gd {
+  -skrollr-animation-name: bgGd;
+}
+
+@-skrollr-keyframes bgGd {
+  0 {
+    opacity: 0;
+  }
+
+  7800 {
+    opacity: 1;
+  }
+}
+
+#bg_mm {
+  -skrollr-animation-name: bgMm;
+}
+
+@-skrollr-keyframes bgMm {
+  0 {
+    opacity: 0;
+  }
+
+  7800 {
+    opacity: 0;
+  }
+
+  15800 {
+    opacity: 1;
+  }
+}
