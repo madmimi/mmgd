@@ -4,15 +4,15 @@ p.standard {
 
 @-skrollr-keyframes standardParagraph {
   center {
-    opacity#{"[cubic]"}: 1;
+    opacity: 1;
     transform: translateY(0px);
   }
   center-top {
-    opacity#{"[cubic]"}: 0;
+    opacity: 0;
     transform: translateY(-40px);
   }
   center-bottom {
-    opacity#{"[cubic]"}: 0;
+    opacity: 0;
     transform: translateY(40px);
   }
 }
@@ -23,11 +23,11 @@ p.start {
 
 @-skrollr-keyframes startParagraph {
   center {
-    opacity#{"[cubic]"}: 1;
+    opacity: 1;
     transform: translateY(0px);
   }
   center-bottom {
-    opacity#{"[cubic]"}: 0;
+    opacity: 0;
     transform: translateY(40px);
   }
 }
@@ -38,11 +38,11 @@ p.end {
 
 @-skrollr-keyframes endParagraph {
   center {
-    opacity#{"[cubic]"}: 1;
+    opacity: 1;
     transform: translateY(0px);
   }
   center-top {
-    opacity#{"[cubic]"}: 0;
+    opacity: 0;
     transform: translateY(-40px);
   }
 }
@@ -56,16 +56,19 @@ p.end {
     opacity#{"[quadratic]"}: 1;
     transform-origin: top;
     transform: translateY(-10px) scaleY(1);
+    display: inline-block;
   }
   1500 {
     opacity#{"[quadratic]"}: 0;
     transform-origin: top;
     transform: translateY(40px) scaleY(2.5);
+    display: inline-block;
   }
   1501 {
     opacity#{"[quadratic]"}: 0;
     transform-origin: top;
     transform: translateY(40px) scaleY(2.5);
+    display: none;
   }
 }
 

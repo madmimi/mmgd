@@ -152,6 +152,11 @@
     <section id='step-11'></section>
     <section id='step-12'></section>
     <section id='step-13'></section>
+    <div class='controls'>
+      <a href='#' id='play'>Play</a>
+      <a href='#' id='pause'>Pause</a>
+      <a href='#' id='backTop'>Back to Top</a>
+    </div>
     <span class='tweet'><a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a></span>
     <span class='copy'>&copy; 2014 GoDaddy.com, LLC</span>
     <?php include('_bottom.php') ?>

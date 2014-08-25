@@ -6,7 +6,11 @@ $(document).ready(function() {
       OFFSET_TOP     = 520;
 
   var firstSection  = $('body section:first-of-type'),
-      downLink      = $('a.chevron_down');
+      downLink      = $('a.chevron_down'),
+      playLink      = $('a#play'),
+      pauseLink      = $('a#pause'),
+      stopLink      = $('a#stop'),
+      backTopLink      = $('a#backTop');
 
   var getCurrentPosition = function() {
     return Math.floor($(window).scrollTop() / SECTION_HEIGHT) * SECTION_HEIGHT;
@@ -16,6 +20,18 @@ $(document).ready(function() {
     $('html, body').stop(true).animate({
       scrollTop : top > 0 ? top + OFFSET_TOP : 0
     }, 500, "swing");
+  };
+
+  var playToEnd = function() {
+    $('html, body').stop(true).animate({
+      scrollTop : 22500
+    }, 40000, "linear");
+  };
+
+  var backToTop = function() {
+    $('html, body').stop(true).animate({
+      scrollTop : 0
+    }, 3000, "linear");
   };
 
   var scrollToPrevSection = function() {
@@ -46,6 +62,31 @@ $(document).ready(function() {
     }
 
     e.preventDefault();
+  });
+
+  pauseLink.hide();
+  backTopLink.hide();
+
+  playLink.click(function (e) {
+    e.preventDefault();
+    playToEnd();
+    $(this).hide();
+    pauseLink.show();
+  });
+
+  pauseLink.click(function (e) {
+    e.preventDefault();
+    $('body, html').stop(true);
+    $(this).hide();
+    backTopLink.show();
+    playLink.show();
+  });
+
+  backTopLink.click(function (e) {
+    e.preventDefault();
+    backToTop();
+    $(this).hide();
+    playLink.show();
   });
 
 }); // end document.ready

@@ -59,6 +59,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #373a40;
   line-height: 1.36;
+  overflow: hidden;
 }
 
 .bg {
@@ -72,13 +73,26 @@ body {
 }
 
 .copy,
-.tweet {
+.tweet,
+.controls {
   position: fixed;
   color: inherit;
   font-size: 1.6rem;
   bottom: 10px;
   font-weight: 400;
   opacity: 0.6;
+}
+
+.controls {
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  text-align: center;
+  word-spacing: 10px;
+}
+.controls a {
+  word-spacing: normal;
+  color: inherit;
 }
 
 .copy {
