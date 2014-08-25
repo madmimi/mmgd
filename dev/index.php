@@ -3,19 +3,17 @@
   <head>
     <?php include('_head.php') ?>
   </head>
-  <body>
-    <div class='bg' id='bg'></div>
-    <div class='bg' id='bg_gd'></div>
-    <div class='bg' id='bg_mm'></div>
+  <body data-0='color:hsl(0,0%,30%);stroke:hsl(0,0%,40%)' data-10000='color:hsl(245,100%,2%);stroke:hsl(245,100%,12%)' data-15000='color:hsl(320,100%,12%);stroke:hsl(320,100%,22%)' data-18000='color:hsl(360,100%,2%);stroke:hsl(360,100%,12%)' data-21350='color:hsl(360,0%,30%);stroke:hsl(360,100%,12%)' data-4500='color:hsl(170,100%,12%);stroke:hsl(170,100%,22%)'>
+    <div class='bg' data-0='background-color:hsl(150,0%,95%)' data-10000='background-color:hsl(245,70%,60%)' data-15000='background-color:hsl(320,100%,52%)' data-18000='background-color:hsl(360,100%,52%)' data-21350='background-color:hsl(360,0%,95%)' data-4500='background-color:hsl(170,100%,52%)' id='bg'></div>
     <div class='scene'>
       <img alt='GoDaddy' id='godaddy_guy' src='images/godaddy.min.svg'>
       <img alt='Mad Mimi' height='214' id='mimi' src='images/mimi@2x.png' width='143'>
     </div>
     <div class='bg_scene'>
-      <div id='gd_bg'>
+      <div id='gd_city'>
         <?php include('images/gd_bg.min.svg') ?>
       </div>
-      <div id='mm_bg'>
+      <div id='mm_tree'>
         <?php include('images/mm_bg.min.svg') ?>
       </div>
       <div id='gd_car'>
@@ -30,6 +28,15 @@
       <div id='gd_plate'>
         <?php include('images/gd_plate.min.svg') ?>
       </div>
+      <div id='gd_fun'>
+        <?php include('images/gd_fun.min.svg') ?>
+      </div>
+      <div id='gd_blue'>
+        <?php include('images/gd_blue.min.svg') ?>
+      </div>
+      <div id='gd_blue_copy'>
+        <?php include('images/gd_blue_copy.min.svg') ?>
+      </div>
       <div id='leaf'>
         <?php include('images/leaf.min.svg') ?>
       </div>
@@ -41,6 +48,39 @@
       </div>
       <div id='fish_small'>
         <?php include('images/fish_small.min.svg') ?>
+      </div>
+      <div id='distant_sound'>
+        <?php include('images/distant_sound.min.svg') ?>
+      </div>
+      <div id='heart'>
+        <?php include('images/heart.min.svg') ?>
+      </div>
+      <div id='heart_small'>
+        <?php include('images/heart_small.min.svg') ?>
+      </div>
+      <div id='idea'>
+        <?php include('images/idea.min.svg') ?>
+      </div>
+      <div id='lalala'>
+        <?php include('images/lalala.min.svg') ?>
+      </div>
+      <div id='email'>
+        <?php include('images/email.min.svg') ?>
+      </div>
+      <div id='easy_to_read'>
+        <?php include('images/easy_to_read.min.svg') ?>
+      </div>
+      <div id='awesome'>
+        <?php include('images/awesome.min.svg') ?>
+      </div>
+      <div id='small_biz'>
+        <?php include('images/small_biz.min.svg') ?>
+      </div>
+      <div id='big_biz'>
+        <?php include('images/big_biz.min.svg') ?>
+      </div>
+      <div id='online'>
+        <?php include('images/online.min.svg') ?>
       </div>
     </div>
     <a alt='Scroll Down' class='chevron_down' data-anchor-target='#step-12' href='#'>
@@ -97,7 +137,7 @@
     </p>
     <p class='end' data-anchor-target='#step-13'>
       <span>GoDaddy acquires Mad Mimi</span>
-      <span>— <a href="#">Read more</a></span>
+      <span>— <a href="http://blog.madmimi.com/godaddy-mad-mimi/" title="GoDaddy acquires Mad Mimi - Mad Mimi Blog">Read more</a></span>
     </p>
     <section id='step-1'></section>
     <section id='step-2'></section>
@@ -112,7 +152,8 @@
     <section id='step-11'></section>
     <section id='step-12'></section>
     <section id='step-13'></section>
-    <span>&copy; 2014 GoDaddy.com, LLC</span>
+    <span class='tweet'><a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a></span>
+    <span class='copy'>&copy; 2014 GoDaddy.com, LLC</span>
     <?php include('_bottom.php') ?>
   </body>
 </html>

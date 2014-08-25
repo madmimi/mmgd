@@ -2,17 +2,15 @@
 %html.no-js
   %head
     <?php include('_head.php') ?>
-  %body
-    #bg.bg
-    #bg_gd.bg
-    #bg_mm.bg
+  %body(data-0="color:hsl(0,0%,30%);stroke:hsl(0,0%,40%)" data-4500="color:hsl(170,100%,12%);stroke:hsl(170,100%,22%)" data-10000="color:hsl(245,100%,2%);stroke:hsl(245,100%,12%)" data-15000="color:hsl(320,100%,12%);stroke:hsl(320,100%,22%)" data-18000="color:hsl(360,100%,2%);stroke:hsl(360,100%,12%)" data-21350="color:hsl(360,0%,30%);stroke:hsl(360,100%,12%)")
+    #bg.bg(data-0="background-color:hsl(150,0%,95%)" data-4500="background-color:hsl(170,100%,52%)" data-10000="background-color:hsl(245,70%,60%)" data-15000="background-color:hsl(320,100%,52%)" data-18000="background-color:hsl(360,100%,52%)" data-21350="background-color:hsl(360,0%,95%)")
     .scene
       %img#godaddy_guy{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
       %img#mimi{:src=> "images/mimi@2x.png", :alt => "Mad Mimi", :width => "143", :height => "214"}
     .bg_scene
-      #gd_bg
+      #gd_city
         <?php include('images/gd_bg.min.svg') ?>
-      #mm_bg
+      #mm_tree
         <?php include('images/mm_bg.min.svg') ?>
       #gd_car
         <?php include('images/gd_car.min.svg') ?>
@@ -22,6 +20,12 @@
         <?php include('images/gd_star.min.svg') ?>
       #gd_plate
         <?php include('images/gd_plate.min.svg') ?>
+      #gd_fun
+        <?php include('images/gd_fun.min.svg') ?>
+      #gd_blue
+        <?php include('images/gd_blue.min.svg') ?>
+      #gd_blue_copy
+        <?php include('images/gd_blue_copy.min.svg') ?>
       #leaf
         <?php include('images/leaf.min.svg') ?>
       #river
@@ -30,6 +34,28 @@
         <?php include('images/fish_big.min.svg') ?>
       #fish_small
         <?php include('images/fish_small.min.svg') ?>
+      #distant_sound
+        <?php include('images/distant_sound.min.svg') ?>
+      #heart
+        <?php include('images/heart.min.svg') ?>
+      #heart_small
+        <?php include('images/heart_small.min.svg') ?>
+      #idea
+        <?php include('images/idea.min.svg') ?>
+      #lalala
+        <?php include('images/lalala.min.svg') ?>
+      #email
+        <?php include('images/email.min.svg') ?>
+      #easy_to_read
+        <?php include('images/easy_to_read.min.svg') ?>
+      #awesome
+        <?php include('images/awesome.min.svg') ?>
+      #small_biz
+        <?php include('images/small_biz.min.svg') ?>
+      #big_biz
+        <?php include('images/big_biz.min.svg') ?>
+      #online
+        <?php include('images/online.min.svg') ?>
     %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
       %img{:src=> "images/chevron_down.min.svg"}
     %p.start{:"data-anchor-target" => "#step-1"}
@@ -71,7 +97,7 @@
       %span.godaddy Forever and ever!”
     %p.end{:"data-anchor-target" => "#step-13"}
       %span GoDaddy acquires Mad Mimi
-      %span — <a href="#">Read more</a>
+      %span — <a href="http://blog.madmimi.com/godaddy-mad-mimi/" title="GoDaddy acquires Mad Mimi - Mad Mimi Blog">Read more</a>
     %section#step-1
     %section#step-2
     %section#step-3
@@ -85,5 +111,6 @@
     %section#step-11
     %section#step-12
     %section#step-13
-    %span &copy; 2014 GoDaddy.com, LLC
+    %span.tweet <a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a>
+    %span.copy &copy; 2014 GoDaddy.com, LLC
     <?php include('_bottom.php') ?>

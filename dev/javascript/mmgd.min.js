@@ -15,7 +15,7 @@ $(document).ready(function() {
   var scrollTo = function(top) {
     $('html, body').stop(true).animate({
       scrollTop : top > 0 ? top + OFFSET_TOP : 0
-    }, 500);
+    }, 500, "swing");
   };
 
   var scrollToPrevSection = function() {
@@ -54,6 +54,6 @@ $(document).ready(function() {
 var s = skrollr.init({
   render: function(data) {
     //Debugging - Log the current scroll position.
-    console.log(data.curTop);
+    // console.log(data.curTop);
   }
 });
