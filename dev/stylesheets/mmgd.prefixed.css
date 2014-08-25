@@ -210,15 +210,11 @@ svg * {
 #gd_glasses {
   left: -480px;
   top: -310px;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 250;
 }
 
 #gd_star {
   left: -720px;
   top: -70px;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 250;
 }
 
 #gd_plate {
@@ -231,15 +227,11 @@ svg * {
 #gd_fun {
   left: -180px;
   top: -380px;
-  stroke-dasharray: 230;
-  stroke-dashoffset: 230;
 }
 
 #gd_blue {
   left: -100px;
   top: 40px;
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
 }
 
 #gd_blue_copy {
@@ -259,8 +251,6 @@ svg * {
 #leaf {
   left: 150px;
   top: -125px;
-  stroke-dasharray: 470;
-  stroke-dashoffset: 470;
 }
 
 #fish_small {
@@ -276,22 +266,16 @@ svg * {
 #distant_sound {
   left: 450px;
   top: 5px;
-  stroke-dasharray: 350;
-  stroke-dashoffset: 350;
 }
 
 #heart {
   left: 390px;
   top: 0px;
-  stroke-dasharray: 350;
-  stroke-dashoffset: 350;
 }
 
 #heart_small {
   left: 416px;
   top: 20px;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 250;
 }
 
 #idea {
@@ -304,8 +288,6 @@ svg * {
 #lalala {
   left: 396px;
   top: 138px;
-  stroke-dasharray: 50;
-  stroke-dashoffset: 50;
 }
 
 #email {
