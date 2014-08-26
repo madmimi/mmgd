@@ -7,9 +7,9 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="gd_blue" sketch:type="MSArtboardGroup" stroke="#646464" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <ellipse id="Oval-17" sketch:type="MSShapeGroup" cx="21.5054059" cy="23.2911293" rx="16.7410772" ry="15.5865202"></ellipse>
-            <ellipse id="Oval-19" sketch:type="MSShapeGroup" cx="23.9801242" cy="26.1029163" rx="6.16801001" ry="5.74263001"></ellipse>
+            <ellipse id="Oval-19" fill="#C4C4C4" sketch:type="MSShapeGroup" cx="23.9801242" cy="26.1029163" rx="6.16801001" ry="5.74263001"></ellipse>
             <ellipse id="Oval-20" sketch:type="MSShapeGroup" cx="59.3726357" cy="12.7711587" rx="4.2607169" ry="3.08591931"></ellipse>
-            <ellipse id="Oval-18" sketch:type="MSShapeGroup" cx="59.4201882" cy="12.8416364" rx="10.8296003" ry="6.56339409"></ellipse>
+            <ellipse id="Oval-18" fill="#C4C4C4" sketch:type="MSShapeGroup" cx="59.4201882" cy="12.8416364" rx="10.8296003" ry="6.56339409"></ellipse>
             <path d="M32.3054719,57.3310898 L66.4102508,49.8023742 L70.0235049,39.8844251" id="Path-45" sketch:type="MSShapeGroup"></path>
         </g>
     </g>

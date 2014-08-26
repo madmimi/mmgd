@@ -3,11 +3,20 @@
     <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
     <title>pause</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <rect id="path-1" x="9.26782091" y="5.69042788" width="7.03404121" height="24.6191442"></rect>
+        <rect id="path-2" x="20.6981379" y="5.69042788" width="7.03404121" height="24.6191442"></rect>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="pause" sketch:type="MSArtboardGroup" stroke="#646464" fill="#9F9F9F">
-            <rect id="Rectangle-3" sketch:type="MSShapeGroup" x="8" y="4" width="8" height="28"></rect>
-            <rect id="Rectangle-4" sketch:type="MSShapeGroup" x="21" y="4" width="8" height="28"></rect>
+        <g id="pause" sketch:type="MSArtboardGroup">
+            <g id="Rectangle-3">
+                <use stroke="#646464" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#9F9F9F" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use stroke="none" fill="none" xlink:href="#path-1"></use>
+            </g>
+            <g id="Rectangle-4">
+                <use stroke="#646464" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#9F9F9F" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                <use stroke="none" fill="none" xlink:href="#path-2"></use>
+            </g>
         </g>
     </g>
 </svg>

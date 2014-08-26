@@ -9,8 +9,8 @@
             <ellipse id="Oval-16" sketch:type="MSShapeGroup" cx="29.1842647" cy="22.4587877" rx="16.6038831" ry="15.4587877"></ellipse>
             <ellipse id="Oval-17" sketch:type="MSShapeGroup" cx="72.6978894" cy="21.88624" rx="18.8940739" ry="11.4509539"></ellipse>
             <path d="M8.40200273,57.6275913 L99.790123,53.5919732 C99.790123,53.5919732 105.755132,94.8335909 67.0163564,100.34262 C28.277581,105.851649 8.40200273,57.6275913 8.40200273,57.6275913 Z" id="Path-42" sketch:type="MSShapeGroup"></path>
-            <ellipse id="Oval-22" sketch:type="MSShapeGroup" cx="31.5" cy="23.5" rx="8.5" ry="7.5"></ellipse>
-            <ellipse id="Oval-23" sketch:type="MSShapeGroup" cx="69.5919632" cy="21.5" rx="10" ry="5.5"></ellipse>
+            <ellipse id="Oval-22" fill="#C4C4C4" sketch:type="MSShapeGroup" cx="31.5" cy="23.5" rx="8.5" ry="7.5"></ellipse>
+            <ellipse id="Oval-23" fill="#C4C4C4" sketch:type="MSShapeGroup" cx="69.5919632" cy="21.5" rx="10" ry="5.5"></ellipse>
         </g>
     </g>
 </svg>
