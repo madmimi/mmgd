@@ -153,9 +153,15 @@
     <section id='step-12'></section>
     <section id='step-13'></section>
     <div class='controls'>
-      <a href='#' id='play'>Play</a>
-      <a href='#' id='pause'>Pause</a>
-      <a href='#' id='backTop'>Back to Top</a>
+      <a href='#' id='play'>
+        <?php include('images/play.min.svg') ?>
+      </a>
+      <a href='#' id='pause'>
+        <?php include('images/pause.min.svg') ?>
+      </a>
+      <a href='#' id='backTop'>
+        <?php include('images/back_top.min.svg') ?>
+      </a>
     </div>
     <span class='tweet'><a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a> | <a href="https://github.com/saschamt/mmgd/issues">Bugs?</a></span>
     <span class='copy'>&copy; 2014 GoDaddy.com, LLC</span>

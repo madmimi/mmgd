@@ -11,7 +11,6 @@
       downLink      = $('a.chevron_down'),
       playLink      = $('a#play'),
       pauseLink     = $('a#pause'),
-      stopLink      = $('a#stop'),
       backTopLink   = $('a#backTop');
 
   var isPlaying = false;
