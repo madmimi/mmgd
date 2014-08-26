@@ -1,13 +1,11 @@
-document.documentElement.setAttribute('data-ua', navigator.userAgent);
-
-$(document).ready(function() {
+(function() {
+  document.documentElement.setAttribute('data-ua', navigator.userAgent);
 
   var SECTION_HEIGHT    = 1800,
       OFFSET_TOP        = 520,
-      END_OFFSET        = 22500,
       DEFAULT_SPEED     = 500,
       BACK_TO_TOP_SPEED = 3000,
-      PLAY_SPEED        = 40000;
+      PLAY_SPEED        = 50000;
 
   var firstSection  = $('body section:first-of-type'),
       downLink      = $('a.chevron_down'),
@@ -16,8 +14,15 @@ $(document).ready(function() {
       stopLink      = $('a#stop'),
       backTopLink   = $('a#backTop');
 
+  var isPlaying = false;
+
   var getCurrentPosition = function() {
-    return Math.floor($(window).scrollTop() / SECTION_HEIGHT) * SECTION_HEIGHT;
+    return Math.floor(window.skrollr.getScrollTop() / SECTION_HEIGHT) * SECTION_HEIGHT;
+  };
+
+  var scrollSpeedMultiplicator = function() {
+    var maxScroll = window.skrollr.getMaxScrollTop();
+    return ((maxScroll - window.skrollr.getScrollTop()) / maxScroll);
   };
 
   var scrollTo = function(top) {
@@ -31,12 +36,11 @@ $(document).ready(function() {
   };
 
   var playToEnd = function() {
-    var currentScroll = window.skrollr.getScrollTop(),
-        maxScroll     = window.skrollr.getMaxScrollTop();
+    console.log(window.skrollr.getMaxScrollTop());
     window.skrollr.animateTo(
-      END_OFFSET,
+      window.skrollr.getMaxScrollTop(),
       {
-        duration: PLAY_SPEED * ((maxScroll - currentScroll) / maxScroll),
+        duration: PLAY_SPEED * scrollSpeedMultiplicator(),
         easing: "linear"
       }
     );
@@ -46,7 +50,7 @@ $(document).ready(function() {
     window.skrollr.animateTo(
       0,
       {
-        duration: BACK_TO_TOP_SPEED,
+        duration: BACK_TO_TOP_SPEED * scrollSpeedMultiplicator(),
         easing: "linear"
       }
     );
@@ -64,61 +68,96 @@ $(document).ready(function() {
     scrollTo(getCurrentPosition() + SECTION_HEIGHT);
   };
 
-  downLink.bind('click', function(e) {
-    e.preventDefault();
-    scrollToNextSection();
-  });
-
-  $(document).keydown(function(e) {
-    switch(e.which) {
-      case 37: // left
-      case 38: // up
-        scrollToPrevSection();
-        break;
-
-      case 39: // right
-      case 40: // down
-        scrollToNextSection();
-        break;
-
-      default:
-        return; // exit this handler for other keys
+  var updateUI = function(data) {
+    if (!data) {
+      data = {
+        curTop: window.skrollr.getScrollTop(),
+        maxTop: window.skrollr.getMaxScrollTop()
+      };
     }
 
-    e.preventDefault();
+    if (data.curTop < data.maxTop) {
+      if (isPlaying) {
+        playLink.hide();
+        pauseLink.show();
+        backTopLink.hide();
+      } else {
+        playLink.show();
+        pauseLink.hide();
+
+        if (data.curTop > OFFSET_TOP) {
+          backTopLink.show();
+        } else {
+          backTopLink.hide();
+        }
+      }
+    } else {
+      isPlaying = false;
+      backTopLink.show();
+      playLink.hide();
+      pauseLink.hide();
+    }
+  };
+
+  $(document).ready(function() {
+
+    downLink.bind('click', function(e) {
+      e.preventDefault();
+      scrollToNextSection();
+    });
+
+    $(document).keydown(function(e) {
+      switch(e.which) {
+        case 37: // left
+        case 38: // up
+          scrollToPrevSection();
+          break;
+
+        case 39: // right
+        case 40: // down
+          scrollToNextSection();
+          break;
+
+        default:
+          return; // exit this handler for other keys
+      }
+
+      e.preventDefault();
+    });
+
+    pauseLink.hide();
+    backTopLink.hide();
+
+    playLink.click(function (e) {
+      e.preventDefault();
+      isPlaying = true;
+      playToEnd();
+      updateUI();
+    });
+
+    pauseLink.click(function (e) {
+      e.preventDefault();
+      isPlaying = false;
+      stopScrolling();
+      updateUI();
+    });
+
+    backTopLink.click(function (e) {
+      e.preventDefault();
+      isPlaying = false;
+      backToTop();
+      updateUI();
+    });
+
+  }); // end document.ready
+
+  // Init Skrollr
+  window.skrollr = skrollr.init({
+    render: function(data) {
+      //Debugging - Log the current scroll position.
+      // console.log(data.curTop);
+
+      updateUI(data);
+    }
   });
-
-  pauseLink.hide();
-  backTopLink.hide();
-
-  playLink.click(function (e) {
-    e.preventDefault();
-    playToEnd();
-    $(this).hide();
-    pauseLink.show();
-  });
-
-  pauseLink.click(function (e) {
-    e.preventDefault();
-    stopScrolling();
-    $(this).hide();
-    backTopLink.show();
-    playLink.show();
-  });
-
-  backTopLink.click(function (e) {
-    e.preventDefault();
-    backToTop();
-    $(this).hide();
-    playLink.show();
-  });
-
-}); // end document.ready
-
-// Init Skrollr
-window.skrollr = skrollr.init({
-  render: function(data) {
-    //Debugging - Log the current scroll position.
-    // console.log(data.curTop);
-  }
-});
+})();
