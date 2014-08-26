@@ -51,7 +51,7 @@
       0,
       {
         duration: BACK_TO_TOP_SPEED * scrollSpeedMultiplicator(),
-        easing: "linear"
+        easing: "swing"
       }
     );
   };

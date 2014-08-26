@@ -3,7 +3,7 @@
   <head>
     <?php include('_head.php') ?>
   </head>
-  <body data-0='color:hsl(0,0%,30%);stroke:hsl(0,0%,40%)' data-10000='color:hsl(245,100%,2%);stroke:hsl(245,100%,12%)' data-15000='color:hsl(320,100%,12%);stroke:hsl(320,100%,22%)' data-18000='color:hsl(360,100%,2%);stroke:hsl(360,100%,12%)' data-21350='color:hsl(360,0%,30%);stroke:hsl(360,100%,12%)' data-4500='color:hsl(170,100%,12%);stroke:hsl(170,100%,22%)'>
+  <body data-0='color:hsl(0,0%,30%);stroke:hsl(0,0%,40%)' data-10000='color:hsl(245,100%,2%);stroke:hsl(245,100%,12%)' data-15000='color:hsl(320,100%,12%);stroke:hsl(320,100%,22%)' data-18000='color:hsl(360,100%,2%);stroke:hsl(360,100%,12%)' data-21350='color:hsl(360,0%,30%);stroke:hsl(360,100%,12%)' data-4500='color:hsl(170,100%,12%);stroke:hsl(170,100%,22%)' id='skrollr-body'>
     <div class='bg' data-0='background-color:hsl(150,0%,95%)' data-10000='background-color:hsl(245,70%,60%)' data-15000='background-color:hsl(320,100%,52%)' data-18000='background-color:hsl(360,100%,52%)' data-21350='background-color:hsl(360,0%,95%)' data-4500='background-color:hsl(170,100%,52%)' id='bg'></div>
     <div class='scene'>
       <img alt='GoDaddy' id='godaddy_guy' src='images/godaddy.min.svg'>
