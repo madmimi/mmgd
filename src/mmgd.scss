@@ -53,9 +53,19 @@ body {
   width: 250px;
   text-align: center;
   word-spacing: 10px;
+  z-index: 100;
   a {
     word-spacing: normal;
     color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 100ms ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  svg * {
+    stroke: none;
   }
 }
 
@@ -145,8 +155,10 @@ p {
   }
 }
 
-svg * {
-  stroke: inherit;
+svg {
+  * {
+    stroke: inherit;
+  }
 }
 
 #gd_bg,

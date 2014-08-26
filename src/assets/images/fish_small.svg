@@ -5,12 +5,10 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="fish_small" sketch:type="MSArtboardGroup" stroke-linecap="round" stroke="#646464" stroke-linejoin="round">
-            <g id="fish-2" sketch:type="MSLayerGroup" transform="translate(16.030823, 10.715140) rotate(-15.000000) translate(-16.030823, -10.715140) translate(5.030823, 6.215140)">
-                <path d="M0.0044579639,2.01927016 L0.0044579639,8.59347843 L4.51585435,5.18903513 C4.51585435,5.18903513 12.6361855,13.8077929 21.879007,4.52595584 C12.5610883,-4.46135935 5.01307238,3.60415265 5.01307238,3.60415265 L0.0044579639,2.01927016 Z" id="Path-37" sketch:type="MSShapeGroup"></path>
-                <path d="M14.5755339,5.58669266 C14.5755339,5.58669266 15.5682029,8.5850859 16.9865423,7.92205033" id="Path-37" sketch:type="MSShapeGroup"></path>
-                <circle id="Oval-9" sketch:type="MSShapeGroup" cx="17.1148547" cy="4.27871367" r="0.713118944"></circle>
-            </g>
+        <g id="fish_small" sketch:type="MSArtboardGroup" stroke="#646464" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.97619062,8.22814372 L4.97619062,14.802352 L9.48758701,11.3979087 C9.48758701,11.3979087 17.6079182,20.0166664 26.8507396,10.7348294 C17.532821,1.7475142 9.98480504,9.8130262 9.98480504,9.8130262 L4.97619062,8.22814372 Z" id="Path-37" sketch:type="MSShapeGroup" transform="translate(16.025076, 10.487587) rotate(-15.000000) translate(-16.025076, -10.487587) "></path>
+            <path d="M20.0353142,10.510823 C20.0353142,10.510823 21.0279832,13.5092162 22.4463226,12.8461806" id="Path-37" sketch:type="MSShapeGroup" transform="translate(21.148397, 11.698760) rotate(-15.000000) translate(-21.148397, -11.698760) "></path>
+            <circle id="Oval-9" sketch:type="MSShapeGroup" transform="translate(21.880046, 8.918753) rotate(-15.000000) translate(-21.880046, -8.918753) " cx="21.8800463" cy="8.91875272" r="0.713118944"></circle>
         </g>
     </g>
 </svg>

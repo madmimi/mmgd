@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>totop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M15.2694476,25.1221089 C15.2694475,27.0349652 9.89293993,26.2424455 9.89293993,26.2424455 C9.89293993,26.2424455 13.6614627,28.4706803 16.0194476,28.518651 C18.3774325,28.5666217 20.5194476,26.875062 20.5194475,25.4924448 C20.5194475,24.1098277 20.5194475,15.7424448 20.5194475,15.7424448 L27,15.7424448 L18,7.5 L9,15.7424448 L15.2694475,15.7424448 C15.2694475,15.7424448 15.2694476,23.2092527 15.2694476,25.1221089 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="totop" sketch:type="MSArtboardGroup">
+            <g id="Rectangle-3">
+                <use fill="#000000" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <use fill="none" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

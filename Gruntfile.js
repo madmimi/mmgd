@@ -153,11 +153,8 @@ module.exports = function(grunt) {
       options: {
         plugins: [
         { removeViewBox: false },
-        { removeUselessStrokeAndFill: false },
-        { convertPathData: {
-          straightCurves: false
-        }}
-        ]
+        { removeUselessStrokeAndFill: true },
+        { convertPathData: { straightCurves: false }}]
       },
       dist: {
         files: [{

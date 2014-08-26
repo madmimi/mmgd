@@ -3,15 +3,5 @@
     <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
     <title>play</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path id="path-1" d="M5,5 L5,31 L31,18 L5,5 Z"></path>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="play" sketch:type="MSArtboardGroup">
-            <g id="Rectangle-1">
-                <use stroke="#646464" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#9F9F9F" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
-                <use stroke="none" fill="none" xlink:href="#path-1"></use>
-            </g>
-        </g>
-    </g>
+    <path id="path-1" d="M8,8 L8,28 L28,18 L8,8 Z"></path>
 </svg>

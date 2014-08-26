@@ -3,15 +3,5 @@
     <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
     <title>back_top</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path id="path-1" d="M14.3592634,27.4961452 C14.3592634,30.0466203 7.19058657,28.9899273 7.19058657,28.9899273 C7.19058657,28.9899273 12.2152836,31.960907 15.3592634,32.024868 C18.5032433,32.088829 21.3592634,29.833416 21.3592634,27.9899265 C21.3592633,26.1464369 21.3592634,14.9899265 21.3592634,14.9899265 L30,14.9899265 L18,4 L6,14.9899265 L14.3592634,14.9899265 C14.3592634,14.9899265 14.3592635,24.9456702 14.3592634,27.4961452 Z"></path>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="back_top" sketch:type="MSArtboardGroup">
-            <g id="Rectangle-3">
-                <use stroke="#646464" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#9F9F9F" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
-                <use stroke="none" fill="none" xlink:href="#path-1"></use>
-            </g>
-        </g>
-    </g>
+    <path d="M4.233289,26.2753669 L18.5653323,9.97462897 L31.4034399,26.1468709 L18.3090165,20.6641475 L4.233289,26.2753669 Z" id="Path-92" sketch:type="MSShapeGroup"></path>
 </svg>

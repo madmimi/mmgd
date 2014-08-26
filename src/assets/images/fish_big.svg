@@ -5,12 +5,10 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="fish_big" sketch:type="MSArtboardGroup" stroke-linecap="round" stroke="#646464" stroke-linejoin="round">
-            <g id="fish" sketch:type="MSLayerGroup" transform="translate(22.500000, 9.000000) rotate(-15.000000) translate(-22.500000, -9.000000) translate(7.000000, 3.000000)">
-                <path d="M0.00625136092,2.83160359 L0.00625136092,12.0505541 L6.33254015,7.27653524 C6.33254015,7.27653524 17.7196043,19.3625383 30.6807261,6.34670537 C17.6142962,-6.25612233 7.02978433,5.05406942 7.02978433,5.05406942 L0.00625136092,2.83160359 Z" id="Path-37" sketch:type="MSShapeGroup"></path>
-                <path d="M20.4391344,7.83416666 C20.4391344,7.83416666 21.8311448,12.0387854 23.8200688,11.1090168" id="Path-37" sketch:type="MSShapeGroup"></path>
-                <circle id="Oval-9" sketch:type="MSShapeGroup" cx="24" cy="6" r="1"></circle>
-            </g>
+        <g id="fish_big" sketch:type="MSArtboardGroup" stroke="#646464" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.00625136,5.83160359 L7.00625136,15.0505541 L13.3325402,10.2765352 C13.3325402,10.2765352 24.7196043,22.3625383 37.6807261,9.34670537 C24.6142962,-3.25612233 14.0297843,8.05406942 14.0297843,8.05406942 L7.00625136,5.83160359 Z" id="Path-37" sketch:type="MSShapeGroup" transform="translate(22.500000, 9.000000) rotate(-15.000000) translate(-22.500000, -9.000000) "></path>
+            <path d="M28.1235189,9.03258326 C28.1235189,9.03258326 29.5155294,13.237202 31.5044534,12.3074334" id="Path-37" sketch:type="MSShapeGroup" transform="translate(29.684385, 10.698417) rotate(-15.000000) translate(-29.684385, -10.698417) "></path>
+            <circle id="Oval-9" sketch:type="MSShapeGroup" transform="translate(30.710370, 6.800038) rotate(-15.000000) translate(-30.710370, -6.800038) " cx="30.7103695" cy="6.80003812" r="1"></circle>
         </g>
     </g>
 </svg>
