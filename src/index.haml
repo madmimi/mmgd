@@ -1,7 +1,39 @@
 !!! 5
 %html.no-js
   %head
-    <?php include('_head.php') ?>
+    %meta(http-equiv="Content-type" content="text/html; charset=UTF-8")
+    %meta(name="viewport" content="width=device-width, user-scalable=no, minimal-ui")
+    %meta(name="apple-mobile-web-app-capable" content="yes")
+    %meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    %title MMGD.
+    %meta(property="og:title" content="MMGD.")
+    %meta(property="og:description" content="A message from GoDaddy")
+    %script(type="text/javascript" src="//use.typekit.net/fho6fcu.js")
+    %script(type="text/javascript") try{Typekit.load();}catch(e){}
+    %link(rel="stylesheet" href="stylesheets/mmgd.prefixed.css" type="text/css" media="screen")
+    %link(rel="stylesheet" href="stylesheets/skrollr.css" type="text/css" data-skrollr-stylesheet)
+    %script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    %script(src="javascript/modernizr.custom.17715.min.js")
+    <!--[if lt IE 9]><script src="javascript/vendor/html5shiv.min.js"></script><![endif]-->
+    %link(rel="shortcut icon" href="images/favicons/favicon.ico")
+    %link(rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png")
+    %link(rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png")
+    %link(rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png")
+    %link(rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png")
+    %link(rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png")
+    %link(rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png")
+    %link(rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png")
+    %link(rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png")
+    %meta(name="apple-mobile-web-app-title" content="mmgd")
+    %link(rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196")
+    %link(rel="icon" type="image/png" href="images/favicons/favicon-160x160.png" sizes="160x160")
+    %link(rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96")
+    %link(rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16")
+    %link(rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32")
+    %meta(name="msapplication-TileColor" content="#f7f7f7")
+    %meta(name="msapplication-TileImage" content="images/favicons/mstile-144x144.png")
+    %meta(name="msapplication-config" content="images/favicons/browserconfig.xml")
+    %meta(name="application-name" content="mmgd")
   %body#skrollr-body(data-0="color:hsl(0,0%,30%);stroke:hsl(0,0%,40%)" data-4500="color:hsl(170,100%,12%);stroke:hsl(170,100%,22%)" data-10000="color:hsl(245,100%,2%);stroke:hsl(245,100%,12%)" data-15000="color:hsl(320,100%,12%);stroke:hsl(320,100%,22%)" data-18000="color:hsl(360,100%,2%);stroke:hsl(360,100%,12%)" data-21350="color:hsl(360,0%,30%);stroke:hsl(360,100%,12%)")
     #bg.bg(data-0="background-color:hsl(150,0%,95%)" data-4500="background-color:hsl(170,100%,52%)" data-10000="background-color:hsl(245,70%,60%)" data-15000="background-color:hsl(320,100%,52%)" data-18000="background-color:hsl(360,100%,52%)" data-21350="background-color:hsl(360,0%,95%)")
     .scene
@@ -9,53 +41,53 @@
       %img#mimi{:src=> "images/mimi@2x.png", :alt => "Mad Mimi", :width => "143", :height => "214"}
     .bg_scene
       #gd_city
-        <?php include('images/gd_bg.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_bg.min.svg')).render
       #mm_tree
-        <?php include('images/mm_bg.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/mm_bg.min.svg')).render
       #gd_car
-        <?php include('images/gd_car.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_car.min.svg')).render
       #gd_glasses
-        <?php include('images/gd_glasses.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_glasses.min.svg')).render
       #gd_star
-        <?php include('images/gd_star.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_star.min.svg')).render
       #gd_plate
-        <?php include('images/gd_plate.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_plate.min.svg')).render
       #gd_fun
-        <?php include('images/gd_fun.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_fun.min.svg')).render
       #gd_blue
-        <?php include('images/gd_blue.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_blue.min.svg')).render
       #gd_blue_copy
-        <?php include('images/gd_blue_copy.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_blue_copy.min.svg')).render
       #leaf
-        <?php include('images/leaf.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/leaf.min.svg')).render
       #river
-        <?php include('images/river.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/river.min.svg')).render
       #fish_big
-        <?php include('images/fish_big.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/fish_big.min.svg')).render
       #fish_small
-        <?php include('images/fish_small.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/fish_small.min.svg')).render
       #distant_sound
-        <?php include('images/distant_sound.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/distant_sound.min.svg')).render
       #heart
-        <?php include('images/heart.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/heart.min.svg')).render
       #heart_small
-        <?php include('images/heart_small.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/heart_small.min.svg')).render
       #idea
-        <?php include('images/idea.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/idea.min.svg')).render
       #lalala
-        <?php include('images/lalala.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/lalala.min.svg')).render
       #email
-        <?php include('images/email.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/email.min.svg')).render
       #easy_to_read
-        <?php include('images/easy_to_read.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/easy_to_read.min.svg')).render
       #awesome
-        <?php include('images/awesome.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/awesome.min.svg')).render
       #small_biz
-        <?php include('images/small_biz.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/small_biz.min.svg')).render
       #big_biz
-        <?php include('images/big_biz.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/big_biz.min.svg')).render
       #online
-        <?php include('images/online.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/online.min.svg')).render
     %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
       %img{:src=> "images/chevron_down.min.svg"}
     %p.start{:"data-anchor-target" => "#step-1"}
@@ -113,11 +145,13 @@
     %section#step-13
     .controls
       %a#play{:href => "#" }
-        <?php include('images/play.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/play.min.svg')).render
       %a#pause{:href => "#" }
-        <?php include('images/pause.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/pause.min.svg')).render
       %a#backTop{:href => "#" }
-        <?php include('images/back_top.min.svg') ?>
+        = Haml::Engine.new(File.read('/Server/mmgd/public/images/back_top.min.svg')).render
     %span.tweet <a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a>
     %span.copy &copy; 2014 GoDaddy.com, LLC
-    <?php include('_bottom.php') ?>
+    %script(src="javascript/skrollr.stylesheets.min.js")
+    %script(src="javascript/skrollr.min.js")
+    %script(src="javascript/mmgd.min.js")

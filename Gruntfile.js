@@ -67,9 +67,9 @@ module.exports = function(grunt) {
         {expand: true, cwd: 'public/images/', src: ['**'], dest: 'dev/images'},
         ]
       },
-      php: {
+      html: {
         files: [
-        {expand: true, cwd: 'src/', src: ['*.php'], dest: 'dev/'},
+        {expand: true, cwd: 'src/', src: ['*.html'], dest: 'dev/'},
         ]
       },
       jsonenUS: {
@@ -180,17 +180,17 @@ module.exports = function(grunt) {
         files: grunt.file.expandMapping(['*.haml'], 'src/', {
           cwd: 'src/',
           rename: function(base, path) {
-            return base + path.replace(/\.haml$/, '.php');
+            return base + path.replace(/\.haml$/, '.html');
           }
         })
       }
     },
     htmlcompressor: {
       compile: {
-        files: grunt.file.expandMapping(['*.php'], 'public/', {
+        files: grunt.file.expandMapping(['*.html'], 'public/', {
           cwd: 'src/',
           rename: function(base, path) {
-            return base + path.replace(/\.php$/, '.php');
+            return base + path.replace(/\.html$/, '.html');
           },
           options: {
             type: 'html',
@@ -243,7 +243,7 @@ module.exports = function(grunt) {
       },
       haml: {
         files: ['src/*.haml'],
-        tasks: ['haml','copy:php','htmlcompressor']
+        tasks: ['haml','copy:html','htmlcompressor']
       },
       livereload: {
         options: { livereload: true },
