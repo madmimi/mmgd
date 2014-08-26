@@ -340,7 +340,7 @@ p.end {
 
 @-skrollr-keyframes gdPlate {
   1950 {
-    stroke-dashoffset[cubic]: 600;
+    stroke-dashoffset[cubic]: 620;
     transform: translateX(-50px) translateY(-230px);
     opacity: 1;
   }
@@ -352,7 +352,7 @@ p.end {
   }
 
   2900 {
-    stroke-dashoffset[cubic]: 600;
+    stroke-dashoffset[cubic]: 620;
     transform: translateX(10px) translateY(30px);
     opacity: 0;
   }
@@ -406,7 +406,7 @@ p.end {
 
 @-skrollr-keyframes gdBlueCopy {
   4100 {
-    stroke-dashoffset[cubic]: 430;
+    stroke-dashoffset[cubic]: 450;
     transform: translateX(60px) translateY(-50px) scale(1);
     opacity: 1;
   }
