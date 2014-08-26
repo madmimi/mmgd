@@ -163,7 +163,7 @@
         <?php include('images/back_top.min.svg') ?>
       </a>
     </div>
-    <span class='tweet'><a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a> | <a href="https://github.com/saschamt/mmgd/issues">Bugs?</a></span>
+    <span class='tweet'><a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a></span>
     <span class='copy'>&copy; 2014 GoDaddy.com, LLC</span>
     <?php include('_bottom.php') ?>
   </body>
