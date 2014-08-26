@@ -2,36 +2,58 @@ document.documentElement.setAttribute('data-ua', navigator.userAgent);
 
 $(document).ready(function() {
 
-  var SECTION_HEIGHT = 1800,
-      OFFSET_TOP     = 520;
+  var SECTION_HEIGHT    = 1800,
+      OFFSET_TOP        = 520,
+      END_OFFSET        = 22500,
+      DEFAULT_SPEED     = 500,
+      BACK_TO_TOP_SPEED = 3000,
+      PLAY_SPEED        = 40000;
 
   var firstSection  = $('body section:first-of-type'),
       downLink      = $('a.chevron_down'),
       playLink      = $('a#play'),
-      pauseLink      = $('a#pause'),
+      pauseLink     = $('a#pause'),
       stopLink      = $('a#stop'),
-      backTopLink      = $('a#backTop');
+      backTopLink   = $('a#backTop');
 
   var getCurrentPosition = function() {
     return Math.floor($(window).scrollTop() / SECTION_HEIGHT) * SECTION_HEIGHT;
   };
 
   var scrollTo = function(top) {
-    $('html, body').stop(true).animate({
-      scrollTop : top > 0 ? top + OFFSET_TOP : 0
-    }, 500, "swing");
+    window.skrollr.animateTo(
+      top > 0 ? top + OFFSET_TOP : 0,
+      {
+        duration: DEFAULT_SPEED,
+        easing: "swing"
+      }
+    );
   };
 
   var playToEnd = function() {
-    $('html, body').stop(true).animate({
-      scrollTop : 22500
-    }, 40000, "linear");
+    var currentScroll = window.skrollr.getScrollTop(),
+        maxScroll     = window.skrollr.getMaxScrollTop();
+    window.skrollr.animateTo(
+      END_OFFSET,
+      {
+        duration: PLAY_SPEED * ((maxScroll - currentScroll) / maxScroll),
+        easing: "linear"
+      }
+    );
   };
 
   var backToTop = function() {
-    $('html, body').stop(true).animate({
-      scrollTop : 0
-    }, 3000, "linear");
+    window.skrollr.animateTo(
+      0,
+      {
+        duration: BACK_TO_TOP_SPEED,
+        easing: "linear"
+      }
+    );
+  };
+
+  var stopScrolling = function() {
+    window.skrollr.stopAnimateTo();
   };
 
   var scrollToPrevSection = function() {
@@ -49,10 +71,12 @@ $(document).ready(function() {
 
   $(document).keydown(function(e) {
     switch(e.which) {
+      case 37: // left
       case 38: // up
         scrollToPrevSection();
         break;
 
+      case 39: // right
       case 40: // down
         scrollToNextSection();
         break;
@@ -76,7 +100,7 @@ $(document).ready(function() {
 
   pauseLink.click(function (e) {
     e.preventDefault();
-    $('body, html').stop(true);
+    stopScrolling();
     $(this).hide();
     backTopLink.show();
     playLink.show();
@@ -92,7 +116,7 @@ $(document).ready(function() {
 }); // end document.ready
 
 // Init Skrollr
-var s = skrollr.init({
+window.skrollr = skrollr.init({
   render: function(data) {
     //Debugging - Log the current scroll position.
     // console.log(data.curTop);
