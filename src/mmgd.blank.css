@@ -108,20 +108,6 @@ body {
   opacity: 0;
 }
 
-#bg_neutral {
-  z-index: 0;
-  background-color: #fafafa;
-  background-image: radial-gradient(ellipse, transparent, rgba(0, 0, 0, 0.2));
-}
-
-#bg_gd {
-  background-color: #77a200;
-}
-
-#bg_mm {
-  background-color: #ff234e;
-}
-
 section {
   height: 1800px;
   width: 100%;

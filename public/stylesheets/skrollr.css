@@ -18,6 +18,7 @@ p.standard {
     transform: translateY(40px);
   }
 }
+
 p.start {
   -skrollr-animation-name: startParagraph;
 }
@@ -33,6 +34,7 @@ p.start {
     transform: translateY(40px);
   }
 }
+
 p.end {
   -skrollr-animation-name: endParagraph;
 }
@@ -48,6 +50,7 @@ p.end {
     transform: translateY(-40px);
   }
 }
+
 .chevron_down {
   -skrollr-animation-name: chevron;
 }
@@ -74,6 +77,7 @@ p.end {
     display: none;
   }
 }
+
 #godaddy_guy {
   -skrollr-animation-name: godaddyGuy;
 }
@@ -144,6 +148,7 @@ p.end {
     transform: scale(1) translate(-120px, 0px) translateZ(0px);
   }
 }
+
 #mimi {
   -skrollr-animation-name: mimi;
 }
@@ -184,6 +189,7 @@ p.end {
     transform: scale(1.2) translate(50px, 0px) translateZ(0px);
   }
 }
+
 #gd_city svg {
   -skrollr-animation-name: gdCity;
 }
@@ -207,6 +213,7 @@ p.end {
     transform: scale(0.75);
   }
 }
+
 #mm_tree svg {
   -skrollr-animation-name: mmTree;
 }
@@ -228,6 +235,7 @@ p.end {
     stroke-dashoffset[cubic]: 2400;
   }
 }
+
 #bg_gd {
   -skrollr-animation-name: bgGd;
 }
@@ -241,6 +249,7 @@ p.end {
     opacity: 1;
   }
 }
+
 #bg_mm {
   -skrollr-animation-name: bgMm;
 }
@@ -258,6 +267,7 @@ p.end {
     opacity: 1;
   }
 }
+
 #gd_car svg {
   -skrollr-animation-name: gdCar;
 }
@@ -281,6 +291,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #gd_star svg {
   -skrollr-animation-name: gdStar;
 }
@@ -301,6 +312,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #gd_glasses svg {
   -skrollr-animation-name: gdGlasses;
 }
@@ -321,6 +333,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #gd_plate svg {
   -skrollr-animation-name: gdPlate;
 }
@@ -344,6 +357,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #gd_fun svg {
   -skrollr-animation-name: gdFun;
 }
@@ -364,6 +378,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #gd_blue svg {
   -skrollr-animation-name: gdBlue;
 }
@@ -384,6 +399,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #gd_blue_copy svg {
   -skrollr-animation-name: gdBlueCopy;
 }
@@ -407,6 +423,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #leaf svg {
   -skrollr-animation-name: AniLeaf;
 }
@@ -447,6 +464,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #river svg {
   -skrollr-animation-name: AniRiver;
 }
@@ -470,6 +488,7 @@ p.end {
     transform: scale(1);
   }
 }
+
 #fish_small svg {
   -skrollr-animation-name: fishSmall;
 }
@@ -493,6 +512,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #fish_big svg {
   -skrollr-animation-name: fishBig;
 }
@@ -516,6 +536,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #distant_sound svg {
   -skrollr-animation-name: distantSound;
 }
@@ -536,6 +557,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #heart svg {
   -skrollr-animation-name: heart;
 }
@@ -556,6 +578,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #heart_small svg {
   -skrollr-animation-name: heartSmall;
 }
@@ -576,6 +599,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #idea svg {
   -skrollr-animation-name: idea;
 }
@@ -599,6 +623,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #lalala svg {
   -skrollr-animation-name: lalala;
 }
@@ -619,6 +644,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #email svg {
   -skrollr-animation-name: email;
 }
@@ -642,6 +668,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #easy_to_read svg {
   -skrollr-animation-name: easyToRead;
 }
@@ -665,6 +692,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #awesome svg {
   -skrollr-animation-name: awesome;
 }
@@ -688,6 +716,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #small_biz svg {
   -skrollr-animation-name: smallBiz;
 }
@@ -713,6 +742,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #online svg {
   -skrollr-animation-name: online;
 }
@@ -738,6 +768,7 @@ p.end {
     opacity: 0;
   }
 }
+
 #big_biz svg {
   -skrollr-animation-name: bigBiz;
 }
