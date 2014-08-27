@@ -178,13 +178,22 @@ p.end {
   z-index: 100;
 }
 
-.bg_scene {
+.scene_wrapper {
   position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.bg_scene {
+  position: absolute;
   top: 50%;
   left: 44%;
 }
 .bg_scene svg {
-  position: fixed;
+  position: absolute;
   max-width: 500px;
 }
 .bg_scene > div {
