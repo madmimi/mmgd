@@ -29,7 +29,7 @@
       top > 0 ? top + OFFSET_TOP : 0,
       {
         duration: DEFAULT_SPEED,
-        easing: "swing"
+        easing: "linear"
       }
     );
   };
@@ -50,7 +50,7 @@
       0,
       {
         duration: BACK_TO_TOP_SPEED * scrollSpeedMultiplicator(),
-        easing: "swing"
+        easing: "linear"
       }
     );
   };
