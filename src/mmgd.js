@@ -5,7 +5,7 @@
       OFFSET_TOP        = 520,
       DEFAULT_SPEED     = 500,
       BACK_TO_TOP_SPEED = 3000,
-      PLAY_SPEED        = 50000;
+      PLAY_SPEED        = 58000;
 
   var firstSection  = $('body section:first-of-type'),
       downLink      = $('a.chevron_down'),

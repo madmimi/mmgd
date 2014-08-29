@@ -24,13 +24,13 @@ body {
   color: $default-text-color;
   line-height: 1.36;
   overflow: hidden;
+  background-color: #F3F3F3;
 }
 
 .bg {
   position: absolute;
   top: -200px;
   height: 23800px; // calculated body height
-  margin-bottom: -200px;
   right: 0;
   left: 0;
   z-index: 0;
