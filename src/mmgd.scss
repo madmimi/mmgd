@@ -39,7 +39,7 @@ body {
 .copy,
 .tweet,
 .controls {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   color: inherit;
   font-size: $tiny-font-size;
@@ -88,21 +88,12 @@ section {
   width: 100%;
 }
 
-.text_wrapper {
+p {
   position: fixed;
-  z-index: 500;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.text_wrapper p {
-  position: absolute;
   z-index: 1000;
   opacity: 0;
   top: 40%;
-  margin-top: - $default-font-size * 3;
+  margin-top: -50px;
   vertical-align: middle;
   padding-left: 44%;
   color: inherit;
@@ -121,7 +112,7 @@ section {
     }
   }
   &.finale {
-    margin-top: -90px;
+    margin-top: -120px;
     > span:nth-of-type(1) {
       display: inline-block;
     }
@@ -131,7 +122,7 @@ section {
     }
   }
   &.end {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -390,8 +381,9 @@ svg {
   top: -50px;
 }
 
-body .text_wrapper > p:last-of-type,
-body .text_wrapper > p:first-of-type {
+body > p:last-of-type,
+body > p:first-of-type {
+  z-index: 1500;
   span {
     a {
       font-weight: bold;
@@ -452,7 +444,7 @@ body .text_wrapper > p:first-of-type {
       }
     }
   }
-  .text_wrapper p {
+  p {
     margin-top: 0;
     padding-left: 16%;
     padding-right: 16%;
@@ -488,6 +480,7 @@ body .text_wrapper > p:first-of-type {
   }
   .scene {
     transform: scale(0.4);
+    top: -30%;
   }
   .bg_scene {
     left: 105px;
@@ -496,21 +489,54 @@ body .text_wrapper > p:first-of-type {
   .chevron_down {
     top: 75%;
   }
-  // .scene img {
-  //   top: 10%;
-  // }
-
-  .text_wrapper p {
+  .controls {
+    display: none;
+  }
+  p {
     top: 43%;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
     &.finale {
       margin-top: 0;
-      span:nth-of-type(3) {
-        margin-top: 6px;
+      > span:nth-of-type(2) {
+        margin-top: 10px;
+        margin-left: 0;
       }
     }
+  }
+  .speech {
+    &:after {
+      left: 50%;
+      border-width: 0 12px 12px 12px;
+      border-color: transparent transparent white transparent;
+      top: 0px;
+      margin-left: -12px;
+    }
+    &:before {
+      left: 50%;
+      border-width: 0 14px 14px 14px;
+      border-color: transparent transparent $godaddy transparent;
+      top: -1px;
+      margin-left: -14px;
+    }
+    &.mm {
+      &:after {
+        border-color: transparent transparent #F8E91A + 40 transparent;
+      }
+      &:before {
+        border-color: transparent transparent $mimi - 100 transparent;
+      }
+    }
+  }
+  #gd_speech {
+    top: 12%;
+    left: -21.5%;
+  }
+
+  #mimi_speech {
+    top: 14%;
+    left: 76.5%;
   }
 }
 

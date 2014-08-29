@@ -53,7 +53,7 @@
       }
     );
   };
-  
+
   var togglePlay = function() {
     if (isPlaying) {
       isPlaying = false;
@@ -169,7 +169,7 @@
   window.skrollr = skrollr.init({
     render: function(data) {
       //Debugging - Log the current scroll position.
-      // console.log(data.curTop);
+      console.log(data.curTop);
 
       updateUI(data);
     }

@@ -75,7 +75,7 @@ body {
 .copy,
 .tweet,
 .controls {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   color: inherit;
   font-size: 1.6rem;
@@ -124,51 +124,42 @@ section {
   width: 100%;
 }
 
-.text_wrapper {
+p {
   position: fixed;
-  z-index: 500;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.text_wrapper p {
-  position: absolute;
   z-index: 1000;
   opacity: 0;
   top: 40%;
-  margin-top: -10.8rem;
+  margin-top: -50px;
   vertical-align: middle;
   padding-left: 44%;
   color: inherit;
 }
-.text_wrapper p span {
+p span {
   display: block;
 }
-.text_wrapper p span.large {
+p span.large {
   font-size: 6.8rem;
 }
-.text_wrapper p.start {
+p.start {
   padding-left: 0;
   text-align: center;
   width: 100%;
 }
-.text_wrapper p.start span {
+p.start span {
   display: inline-block;
 }
-.text_wrapper p.finale {
-  margin-top: -90px;
+p.finale {
+  margin-top: -120px;
 }
-.text_wrapper p.finale > span:nth-of-type(1) {
+p.finale > span:nth-of-type(1) {
   display: inline-block;
 }
-.text_wrapper p.finale > span:nth-of-type(2) {
+p.finale > span:nth-of-type(2) {
   margin-top: 50px;
   margin-left: 100px;
 }
-.text_wrapper p.end {
-  margin-top: 30px;
+p.end {
+  margin-top: 0px;
 }
 
 .speech {
@@ -422,13 +413,17 @@ svg * {
   top: -50px;
 }
 
-body .text_wrapper > p:last-of-type span a,
-body .text_wrapper > p:first-of-type span a {
+body > p:last-of-type,
+body > p:first-of-type {
+  z-index: 1500;
+}
+body > p:last-of-type span a,
+body > p:first-of-type span a {
   font-weight: bold;
   text-decoration: none;
 }
-html[data-ua*="AppleWebKit"] body .text_wrapper > p:last-of-type span, html[data-ua*="AppleWebKit"]
-body .text_wrapper > p:first-of-type span {
+html[data-ua*="AppleWebKit"] body > p:last-of-type span, html[data-ua*="AppleWebKit"]
+body > p:first-of-type span {
   background: linear-gradient(to right, #77a200, #ff234e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -477,30 +472,30 @@ body .text_wrapper > p:first-of-type span {
     position: fixed;
   }
 
-  .text_wrapper p {
+  p {
     margin-top: 0;
     padding-left: 16%;
     padding-right: 16%;
     width: 100%;
     text-align: center;
   }
-  .text_wrapper p.start {
+  p.start {
     padding-right: 0;
   }
-  .text_wrapper p.standard span:first-of-type {
+  p.standard span:first-of-type {
     margin-bottom: 4px;
   }
-  .text_wrapper p.finale {
+  p.finale {
     margin-top: -50px;
   }
-  .text_wrapper p.finale span:first-of-type {
+  p.finale span:first-of-type {
     margin-bottom: 0;
   }
-  .text_wrapper p.finale span:nth-of-type(3) {
+  p.finale span:nth-of-type(3) {
     margin-top: 30px;
   }
-  .text_wrapper p.finale span:nth-of-type(3),
-  .text_wrapper p.finale span:nth-of-type(4) {
+  p.finale span:nth-of-type(3),
+  p.finale span:nth-of-type(4) {
     margin-left: 0;
   }
 }
@@ -511,6 +506,7 @@ body .text_wrapper > p:first-of-type span {
 
   .scene {
     transform: scale(0.4);
+    top: -30%;
   }
 
   .bg_scene {
@@ -522,17 +518,53 @@ body .text_wrapper > p:first-of-type span {
     top: 75%;
   }
 
-  .text_wrapper p {
+  .controls {
+    display: none;
+  }
+
+  p {
     top: 43%;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
   }
-  .text_wrapper p.finale {
+  p.finale {
     margin-top: 0;
   }
-  .text_wrapper p.finale span:nth-of-type(3) {
-    margin-top: 6px;
+  p.finale > span:nth-of-type(2) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .speech:after {
+    left: 50%;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent white transparent;
+    top: 0px;
+    margin-left: -12px;
+  }
+  .speech:before {
+    left: 50%;
+    border-width: 0 14px 14px 14px;
+    border-color: transparent transparent #77a200 transparent;
+    top: -1px;
+    margin-left: -14px;
+  }
+  .speech.mm:after {
+    border-color: transparent transparent #ffff42 transparent;
+  }
+  .speech.mm:before {
+    border-color: transparent transparent #9b0000 transparent;
+  }
+
+  #gd_speech {
+    top: 12%;
+    left: -21.5%;
+  }
+
+  #mimi_speech {
+    top: 14%;
+    left: 76.5%;
   }
 }
 @media screen and (max-device-width: 1024px) and (orientation: landscape) {

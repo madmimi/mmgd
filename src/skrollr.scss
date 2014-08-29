@@ -4,16 +4,16 @@ p.standard {
 
 @-skrollr-keyframes standardParagraph {
   center {
-    opacity#{"[sqrt]"}: 1;
-    transform: translateY(0px);
+    opacity#{"[cubic]"}: 1;
+    transform: translateY(0px) translateZ(0);
   }
-  center-top {
-    opacity#{"[sqrt]"}: 0;
-    transform: translateY(-10px);
+  bottom-top {
+    opacity#{"[cubic]"}: 0;
+    transform: translateY(20px) translateZ(0);
   }
-  center-bottom {
-    opacity#{"[sqrt]"}: 0;
-    transform: translateY(10px);
+  top-bottom {
+    opacity#{"[cubic]"}: 0;
+    transform: translateY(-20px) translateZ(0);
   }
 }
 
@@ -24,11 +24,11 @@ p.start {
 @-skrollr-keyframes startParagraph {
   center {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) translateZ(0);
   }
   center-bottom {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(-10px) translateZ(0);
   }
 }
 
@@ -37,13 +37,13 @@ p.end {
 }
 
 @-skrollr-keyframes endParagraph {
-  center {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  center-top {
+  21665 {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(40px) translateZ(0);
+  }
+  22300 {
+    opacity: 1;
+    transform: translateY(0px) translateZ(0);
   }
 }
 
@@ -267,11 +267,11 @@ p.end {
     opacity#{"[cubic]"}: 1;
     transform: scale(1.2) translate(50px,40px) translateZ(0px);
   }
-  20980 {
+  20180 {
     opacity#{"[cubic]"}: 1;
     transform: scale(1.2) translate(50px,40px) translateZ(0px);
   }
-  21470 {
+  20770 {
     opacity#{"[cubic]"}: 1;
     transform: scale(1.2) translate(50px,0px) translateZ(0px);
   }
