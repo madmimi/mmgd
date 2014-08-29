@@ -39,7 +39,8 @@ body {
 .copy,
 .tweet,
 .controls {
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   color: inherit;
   font-size: $tiny-font-size;
   bottom: 10px;
@@ -87,8 +88,17 @@ section {
   width: 100%;
 }
 
-p {
+.text_wrapper {
   position: fixed;
+  z-index: 500;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.text_wrapper p {
+  position: absolute;
   z-index: 1000;
   opacity: 0;
   top: 40%;
@@ -380,8 +390,8 @@ svg {
   top: -50px;
 }
 
-body > p:last-of-type,
-body > p:first-of-type {
+body .text_wrapper > p:last-of-type,
+body .text_wrapper > p:first-of-type {
   span {
     a {
       font-weight: bold;
@@ -442,7 +452,7 @@ body > p:first-of-type {
       }
     }
   }
-  p {
+  .text_wrapper p {
     margin-top: 0;
     padding-left: 16%;
     padding-right: 16%;
@@ -490,7 +500,7 @@ body > p:first-of-type {
   //   top: 10%;
   // }
 
-  p {
+  .text_wrapper p {
     top: 43%;
     padding-left: 30px;
     padding-right: 30px;

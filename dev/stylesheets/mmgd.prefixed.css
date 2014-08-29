@@ -75,7 +75,8 @@ body {
 .copy,
 .tweet,
 .controls {
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   color: inherit;
   font-size: 1.6rem;
   bottom: 10px;
@@ -123,8 +124,17 @@ section {
   width: 100%;
 }
 
-p {
+.text_wrapper {
   position: fixed;
+  z-index: 500;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.text_wrapper p {
+  position: absolute;
   z-index: 1000;
   opacity: 0;
   top: 40%;
@@ -133,31 +143,31 @@ p {
   padding-left: 44%;
   color: inherit;
 }
-p span {
+.text_wrapper p span {
   display: block;
 }
-p span.large {
+.text_wrapper p span.large {
   font-size: 6.8rem;
 }
-p.start {
+.text_wrapper p.start {
   padding-left: 0;
   text-align: center;
   width: 100%;
 }
-p.start span {
+.text_wrapper p.start span {
   display: inline-block;
 }
-p.finale {
+.text_wrapper p.finale {
   margin-top: -90px;
 }
-p.finale > span:nth-of-type(1) {
+.text_wrapper p.finale > span:nth-of-type(1) {
   display: inline-block;
 }
-p.finale > span:nth-of-type(2) {
+.text_wrapper p.finale > span:nth-of-type(2) {
   margin-top: 50px;
   margin-left: 100px;
 }
-p.end {
+.text_wrapper p.end {
   margin-top: 30px;
 }
 
@@ -412,13 +422,13 @@ svg * {
   top: -50px;
 }
 
-body > p:last-of-type span a,
-body > p:first-of-type span a {
+body .text_wrapper > p:last-of-type span a,
+body .text_wrapper > p:first-of-type span a {
   font-weight: bold;
   text-decoration: none;
 }
-html[data-ua*="AppleWebKit"] body > p:last-of-type span, html[data-ua*="AppleWebKit"]
-body > p:first-of-type span {
+html[data-ua*="AppleWebKit"] body .text_wrapper > p:last-of-type span, html[data-ua*="AppleWebKit"]
+body .text_wrapper > p:first-of-type span {
   background: linear-gradient(to right, #77a200, #ff234e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -469,30 +479,30 @@ body > p:first-of-type span {
     position: fixed;
   }
 
-  p {
+  .text_wrapper p {
     margin-top: 0;
     padding-left: 16%;
     padding-right: 16%;
     width: 100%;
     text-align: center;
   }
-  p.start {
+  .text_wrapper p.start {
     padding-right: 0;
   }
-  p.standard span:first-of-type {
+  .text_wrapper p.standard span:first-of-type {
     margin-bottom: 4px;
   }
-  p.finale {
+  .text_wrapper p.finale {
     margin-top: -50px;
   }
-  p.finale span:first-of-type {
+  .text_wrapper p.finale span:first-of-type {
     margin-bottom: 0;
   }
-  p.finale span:nth-of-type(3) {
+  .text_wrapper p.finale span:nth-of-type(3) {
     margin-top: 30px;
   }
-  p.finale span:nth-of-type(3),
-  p.finale span:nth-of-type(4) {
+  .text_wrapper p.finale span:nth-of-type(3),
+  .text_wrapper p.finale span:nth-of-type(4) {
     margin-left: 0;
   }
 }
@@ -516,16 +526,16 @@ body > p:first-of-type span {
     top: 75%;
   }
 
-  p {
+  .text_wrapper p {
     top: 43%;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
   }
-  p.finale {
+  .text_wrapper p.finale {
     margin-top: 0;
   }
-  p.finale span:nth-of-type(3) {
+  .text_wrapper p.finale span:nth-of-type(3) {
     margin-top: 6px;
   }
 }
