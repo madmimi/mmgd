@@ -125,6 +125,7 @@ section {
 
 p {
   position: fixed;
+  z-index: 1000;
   opacity: 0;
   top: 40%;
   margin-top: -10.8rem;
