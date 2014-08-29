@@ -4,15 +4,15 @@ p.standard {
 
 @-skrollr-keyframes standardParagraph {
   center {
-    opacity: 1;
+    opacity#{"[sqrt]"}: 1;
     transform: translateY(0px);
   }
   center-top {
-    opacity: 0;
+    opacity#{"[sqrt]"}: 0;
     transform: translateY(-40px);
   }
   center-bottom {
-    opacity: 0;
+    opacity#{"[sqrt]"}: 0;
     transform: translateY(40px);
   }
 }
