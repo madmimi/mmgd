@@ -47,7 +47,7 @@ p.end {
 
   center-top {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-40px);
   }
 }
 
@@ -311,12 +311,12 @@ p.end {
     transform: scale(1.2) translate(50px, 40px) translateZ(0px);
   }
 
-  21180 {
+  20980 {
     opacity[cubic]: 1;
     transform: scale(1.2) translate(50px, 40px) translateZ(0px);
   }
 
-  21970 {
+  21470 {
     opacity[cubic]: 1;
     transform: scale(1.2) translate(50px, 0px) translateZ(0px);
   }

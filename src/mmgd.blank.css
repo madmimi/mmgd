@@ -218,9 +218,14 @@ p.end {
 
 .scene {
   z-index: 5;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .scene img {
-  position: fixed;
+  position: absolute;
   top: 50%;
   margin-top: -150px;
   left: 20%;
