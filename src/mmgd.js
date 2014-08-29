@@ -35,7 +35,6 @@
   };
 
   var playToEnd = function() {
-    console.log(window.skrollr.getMaxScrollTop());
     window.skrollr.animateTo(
       window.skrollr.getMaxScrollTop(),
       {
@@ -53,6 +52,18 @@
         easing: "linear"
       }
     );
+  };
+  
+  var togglePlay = function() {
+    if (isPlaying) {
+      isPlaying = false;
+      stopScrolling();
+      updateUI();
+    } else {
+      isPlaying = true;
+      playToEnd();
+      updateUI();
+    }
   };
 
   var stopScrolling = function() {
@@ -115,6 +126,10 @@
         case 39: // right
         case 40: // down
           scrollToNextSection();
+          break;
+
+        case 32:
+          togglePlay();
           break;
 
         default:
