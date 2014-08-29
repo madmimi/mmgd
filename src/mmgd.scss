@@ -379,6 +379,7 @@ body > p:first-of-type {
   span {
     a {
       font-weight: bold;
+      text-decoration: none;
     }
     html[data-ua*="AppleWebKit"] & {
       background: linear-gradient(to right, $godaddy, $mimi);

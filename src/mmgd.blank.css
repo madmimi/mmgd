@@ -409,6 +409,7 @@ svg * {
 body > p:last-of-type span a,
 body > p:first-of-type span a {
   font-weight: bold;
+  text-decoration: none;
 }
 html[data-ua*="AppleWebKit"] body > p:last-of-type span, html[data-ua*="AppleWebKit"]
 body > p:first-of-type span {
