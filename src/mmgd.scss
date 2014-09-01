@@ -38,17 +38,17 @@ body {
   top: 4vh;
   left: 4vh;
   right: 4vh;
-  overflow: hidden;
   backface-visibility: hidden;
   box-sizing: border-box;
 }
 
 .bg {
   position: absolute;
-  top: -200px;
-  height: 23800px; // calculated body height
+  top: 0;
+  // height: 23800px; // calculated body height
   right: 0;
   left: 0;
+  bottom: 0;
   z-index: 0;
   box-sizing: border-box;
   backface-visibility: hidden;

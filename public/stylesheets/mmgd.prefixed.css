@@ -75,7 +75,6 @@ body {
   top: 4vh;
   left: 4vh;
   right: 4vh;
-  overflow: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-sizing: border-box;
@@ -83,10 +82,10 @@ body {
 
 .bg {
   position: absolute;
-  top: -200px;
-  height: 23800px;
+  top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
   z-index: 0;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
