@@ -1,0 +1,17 @@
+/* TEAM */
+Creator: Sascha Michael Trinkaus
+Your title: Head of Design, Mad Mimi
+Company: GoDaddy.com, LLC
+Twitter: @saschamt
+Site: http://madmimi.com
+Location: Cologne, Germany
+Poem: Gary and Dean Levitt
+JS support: Maxim Gladkov
+Special Thanks: Mimi & Caffeine 8)
+
+/* PAGE */
+URL: http://mmgd.madmimi.com
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, Skrollr, Haml, Sass, Grunt, SVGo, Prefixer
+Software: Atom, Sketch
+Hardware: Mac Pro, Macbook Pro, Pen and Paper ;-)

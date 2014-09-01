@@ -4,8 +4,8 @@
   var SECTION_HEIGHT    = 1800,
       OFFSET_TOP        = 520,
       DEFAULT_SPEED     = 500,
-      BACK_TO_TOP_SPEED = 3000,
-      PLAY_SPEED        = 58000;
+      BACK_TO_TOP_SPEED = 2000,
+      PLAY_SPEED        = 48000;
 
   var firstSection  = $('body section:first-of-type'),
       downLink      = $('a.chevron_down'),
@@ -48,7 +48,7 @@
     window.skrollr.animateTo(
       0,
       {
-        duration: BACK_TO_TOP_SPEED * scrollSpeedMultiplicator(),
+        duration: BACK_TO_TOP_SPEED,
         easing: "linear"
       }
     );

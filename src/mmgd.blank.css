@@ -75,6 +75,8 @@ body {
   left: 4vh;
   right: 4vh;
   backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
@@ -228,12 +230,12 @@ p.end {
 }
 
 #gd_speech {
-  top: 51%;
+  top: 36%;
   left: 20.5%;
 }
 
 #mimi_speech {
-  top: 54%;
+  top: 37%;
   left: 34.5%;
 }
 
@@ -249,8 +251,7 @@ p.end {
 }
 .scene img {
   position: absolute;
-  top: 50%;
-  margin-top: -150px;
+  top: 36%;
   left: 20%;
 }
 
@@ -281,7 +282,6 @@ p.end {
 .bg_scene svg {
   position: absolute;
   max-width: 500px;
-  backface-visibility: hidden;
 }
 .bg_scene > div {
   position: absolute;
@@ -525,17 +525,30 @@ p.end span {
     top: -30%;
   }
 
+  .wrapper {
+    bottom: 2vh;
+    top: 2vh;
+    left: 2vh;
+    right: 2vh;
+  }
+
   .bg_scene {
     left: 105px;
     top: 58%;
   }
 
   .chevron_down {
-    top: 75%;
+    top: 55%;
   }
 
-  .controls {
-    display: none;
+  .copy {
+    transform-origin: right center;
+    transform: rotate(90deg);
+  }
+
+  .tweet {
+    transform-origin: left center;
+    transform: rotate(-90deg);
   }
 
   p {

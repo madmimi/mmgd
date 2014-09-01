@@ -95,7 +95,7 @@
           = Haml::Engine.new(File.read('/Server/mmgd/public/images/back_top.min.svg')).render
       %span.tweet <a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a>
       %span.copy &copy; 2014 GoDaddy.com, LLC
-      #bg.bg(data-0="background-color:hsl(150,0%,95%)" data-4500="background-color:hsl(170,100%,52%)" data-10000="background-color:hsl(245,70%,60%)" data-15000="background-color:hsl(320,100%,52%)" data-18000="background-color:hsl(360,100%,52%)" data-21350="background-color:hsl(360,0%,95%)")
+      #bg.bg(data-0="background-color:hsl(150,0%,99%)" data-4500="background-color:hsl(170,100%,59%)" data-10000="background-color:hsl(245,70%,65%)" data-15000="background-color:hsl(320,100%,64%)" data-18000="background-color:hsl(360,100%,63%)" data-21350="background-color:hsl(360,0%,95%)")
       .scene
         %img#godaddy_guy{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
         %img#gd_speech{:src=> "images/gd_speech.min.svg", :alt => "GoDaddy guy speaks"}
@@ -153,19 +153,20 @@
             = Haml::Engine.new(File.read('/Server/mmgd/public/images/online.min.svg')).render
       %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
         %img{:src=> "images/chevron_down.min.svg"}
-    %section#step-1
-    %section#step-2
-    %section#step-3
-    %section#step-4
-    %section#step-5
-    %section#step-6
-    %section#step-7
-    %section#step-8
-    %section#step-9
-    %section#step-10
-    %section#step-11
-    %section#step-12
-    %section#step-13
+    #skrollr-body
+      %section#step-1
+      %section#step-2
+      %section#step-3
+      %section#step-4
+      %section#step-5
+      %section#step-6
+      %section#step-7
+      %section#step-8
+      %section#step-9
+      %section#step-10
+      %section#step-11
+      %section#step-12
+      %section#step-13
     %script(src="javascript/skrollr.stylesheets.min.js")
     %script(src="javascript/skrollr.min.js")
     %script(src="javascript/mmgd.min.js")

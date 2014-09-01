@@ -39,6 +39,8 @@ body {
   left: 4vh;
   right: 4vh;
   backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
@@ -193,12 +195,12 @@ p {
 }
 
 #gd_speech {
-  top: 51%;
+  top: 36%;
   left: 20.5%;
 }
 
 #mimi_speech {
-  top: 54%;
+  top: 37%;
   left: 34.5%;
 }
 
@@ -213,8 +215,7 @@ p {
   backface-visibility: hidden;
   img {
     position: absolute;
-    top: 50%;
-    margin-top: -150px;
+    top: 36%;
     left: 20%;
   }
 }
@@ -245,7 +246,6 @@ p {
   svg {
     position: absolute;
     max-width: 500px;
-    backface-visibility: hidden;
   }
   > div {
     position: absolute;
@@ -502,15 +502,26 @@ p.end {
     transform: scale(0.4);
     top: -30%;
   }
+  .wrapper {
+    bottom: 2vh;
+    top: 2vh;
+    left: 2vh;
+    right: 2vh;
+  }
   .bg_scene {
     left: 105px;
     top: 58%;
   }
   .chevron_down {
-    top: 75%;
+    top: 55%;
   }
-  .controls {
-    display: none;
+  .copy {
+    transform-origin: right center;
+    transform: rotate(90deg);
+  }
+  .tweet {
+    transform-origin: left center;
+    transform: rotate(-90deg);
   }
   p {
     top: 43%;
