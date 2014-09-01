@@ -43,8 +43,10 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
 }
 
 html {
@@ -59,8 +61,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #373a40;
   line-height: 1.36;
-  overflow: hidden;
   background-color: #F3F3F3;
+}
+
+.wrapper {
+  position: fixed;
+  z-index: 10;
+  bottom: 5%;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 4vh;
+  top: 4vh;
+  left: 4vh;
+  right: 4vh;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
 }
 
 .bg {
@@ -70,18 +88,23 @@ body {
   right: 0;
   left: 0;
   z-index: 0;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .copy,
 .tweet,
 .controls {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   color: inherit;
   font-size: 1.6rem;
   bottom: 10px;
   font-weight: 400;
   opacity: 0.6;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .controls {
@@ -125,7 +148,7 @@ section {
 }
 
 p {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   opacity: 0;
   top: 40%;
@@ -133,6 +156,8 @@ p {
   vertical-align: middle;
   padding-left: 44%;
   color: inherit;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 p span {
   display: block;
@@ -225,6 +250,9 @@ p.end {
   top: 0;
   left: 0;
   right: 0;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .scene img {
   position: absolute;
@@ -234,7 +262,7 @@ p.end {
 }
 
 .chevron_down {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 80%;
   margin-left: -22px;
@@ -242,22 +270,28 @@ p.end {
 }
 
 .scene_wrapper {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .bg_scene {
   position: absolute;
   top: 50%;
   left: 44%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .bg_scene svg {
   position: absolute;
   max-width: 500px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .bg_scene > div {
   position: absolute;
@@ -290,8 +324,6 @@ svg * {
 #gd_car {
   left: -400px;
   top: 180px;
-  stroke-dasharray: 649;
-  stroke-dashoffset: 650;
 }
 
 #gd_glasses {
@@ -307,8 +339,6 @@ svg * {
 #gd_plate {
   left: 380px;
   top: -410px;
-  stroke-dasharray: 619;
-  stroke-dashoffset: 620;
 }
 
 #gd_fun {
@@ -413,17 +443,17 @@ svg * {
   top: -50px;
 }
 
-body > p:last-of-type,
-body > p:first-of-type {
+p.start,
+p.end {
   z-index: 1500;
 }
-body > p:last-of-type span a,
-body > p:first-of-type span a {
+p.start span a,
+p.end span a {
   font-weight: bold;
   text-decoration: none;
 }
-html[data-ua*="AppleWebKit"] body > p:last-of-type span, html[data-ua*="AppleWebKit"]
-body > p:first-of-type span {
+html[data-ua*="AppleWebKit"] p.start span, html[data-ua*="AppleWebKit"]
+p.end span {
   background: linear-gradient(to right, #77a200, #ff234e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -449,7 +479,6 @@ body > p:first-of-type span {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
-    position: fixed;
     left: 0;
     right: 0;
     top: 10%;
@@ -469,9 +498,6 @@ body > p:first-of-type span {
   }
   .bg_scene > div {
     text-align: center;
-  }
-  .bg_scene > div svg {
-    position: fixed;
   }
 
   p {

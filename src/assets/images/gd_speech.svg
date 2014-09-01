@@ -5,8 +5,11 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="gd_speech" sketch:type="MSArtboardGroup" stroke="#82BC00" stroke-width="2" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8.7568735,25.8616662 C8.7568735,25.8616662 13.6677874,21.2596149 20.9390276,21.2596149 C28.2102678,21.2596149 35,20.0777872 35,12.3833761 C35,4.68896507 28.1372886,4.20860881 20.9390276,4.20860882 C13.7407666,4.20860883 6.00000001,6.5240938 6,12.3833759 C6,18.2426581 10.1048115,21.2596154 10.1048115,21.2596154 L8.7568735,25.8616662 Z" id="Path-93" sketch:type="MSShapeGroup"></path>
+        <g id="gd_speech" sketch:type="MSArtboardGroup">
+            <path d="M8.7568735,25.8616662 C8.7568735,25.8616662 13.6677874,21.2596149 20.9390276,21.2596149 C28.2102678,21.2596149 35,20.0777872 35,12.3833761 C35,4.68896507 28.1372886,4.20860881 20.9390276,4.20860882 C13.7407666,4.20860883 6.00000001,6.5240938 6,12.3833759 C6,18.2426581 10.1048115,21.2596154 10.1048115,21.2596154 L8.7568735,25.8616662 Z" id="Path-93" stroke="#82BC00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval-33" fill="#82BC00" sketch:type="MSShapeGroup" cx="14" cy="13" r="2"></circle>
+            <circle id="Oval-34" fill="#82BC00" sketch:type="MSShapeGroup" cx="21" cy="13" r="2"></circle>
+            <circle id="Oval-35" fill="#82BC00" sketch:type="MSShapeGroup" cx="28" cy="13" r="2"></circle>
         </g>
     </g>
 </svg>

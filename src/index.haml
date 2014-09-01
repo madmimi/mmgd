@@ -2,7 +2,7 @@
 %html.no-js
   %head
     %meta(http-equiv="Content-type" content="text/html; charset=UTF-8")
-    %meta(name="viewport" content="width=device-width, user-scalable=no, minimal-ui")
+    %meta(name="viewport" content="width=device-width, user-scalable=no")
     %meta(name="author" content="Sascha Michael Trinkaus, @saschamt, Mad Mimi")
     %meta(name="apple-mobile-web-app-capable" content="yes")
     %meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
@@ -36,122 +36,123 @@
     %meta(name="msapplication-config" content="images/favicons/browserconfig.xml")
     %meta(name="application-name" content="mmgd")
   %body(data-0="color:hsl(0,0%,30%);stroke:hsl(0,0%,40%)" data-4500="color:hsl(170,100%,12%);stroke:hsl(170,100%,22%)" data-10000="color:hsl(245,100%,2%);stroke:hsl(245,100%,12%)" data-15000="color:hsl(320,100%,12%);stroke:hsl(320,100%,22%)" data-18000="color:hsl(360,100%,2%);stroke:hsl(360,100%,12%)" data-21350="color:hsl(360,0%,30%);stroke:hsl(360,100%,12%)")
-    %p.start{:"data-anchor-target" => "#step-1"}
-      %span.large MMGD.
-    %p.standard{:"data-anchor-target" => "#step-2"}
-      %span The GoDaddy Guy zoomed around with a frown
-      %span.godaddy.speech.gd "I’ve got the excitement, I’m a man about town"
-    %p.standard{:"data-anchor-target" => "#step-3"}
-      %span.speech.gd
-        %span.godaddy "I have tons of fun, and I help people too
-        %span.godaddy But there's something missing, and I’m a little bit blue."
-    %p.standard{:"data-anchor-target" => "#step-4"}
-      %span While his mind was adrift like a leaf on a river,
-      %span a distant sound set his ears aquiver.
-    %p.standard{:"data-anchor-target" => "#step-5"}
-      %span.speech.gd
-        %span.godaddy "Hark! What's that beautiful singing?
-        %span.godaddy A melody charming and simple and ringing."
-    %p.standard{:"data-anchor-target" => "#step-6"}
-      %span.speech.gd
-        %span.godaddy "I must meet that singer, my heart is a-thumping.
-        %span.godaddy I have an idea — she's what I've been missing!"
-    %p.standard{:"data-anchor-target" => "#step-7"}
-      %span And under a tree, a delightful sight —
-      %span Mad Mimi sat singing, clear and bright.
-    %p.standard{:"data-anchor-target" => "#step-8"}
-      %span.speech.gd
-        %span.godaddy "Hey there, ahem, cough cough, who are you?
-        %span.godaddy You seem so special. What is it you do?"
-    %p.standard{:"data-anchor-target" => "#step-9"}
-      %span.speech.mm
-        %span.mimi "I delight readers with beautiful emails.
-        %span.mimi I'm sugar and spice and puppy dog tails"
-    %p.standard{:"data-anchor-target" => "#step-10"}
-      %span.speech.mm
-        %span.mimi "I'm easy to read newsletters and more.
-        %span.mimi I'm fun and feisty and I don't talk to bores."
-    %p.standard{:"data-anchor-target" => "#step-11"}
-      %span.speech.gd
-        %span.godaddy "I ain't boring. I'm awesome, you know!
-        %span.godaddy And I help small businesses get online and grow"
-    %p.finale.standard{:"data-anchor-target" => "#step-12"}
-      %span.speech.gd
-        %span.godaddy "Let's hang out, Mimi.
-        %span.godaddy We'll help people together!
-      %span.speech.gd
-        %span.godaddy Get online and get heard
-        %span.godaddy forever and ever!”
-    %p.end{:"data-anchor-target" => "#step-13"}
-      %span GoDaddy acquires Mad Mimi
-      %span — <a href="http://blog.madmimi.com/godaddy-mad-mimi/" title="GoDaddy acquires Mad Mimi - Mad Mimi Blog">Read more</a>
-    .controls
-      %a#play{:href => "#" }
-        = Haml::Engine.new(File.read('/Server/mmgd/public/images/play.min.svg')).render
-      %a#pause{:href => "#" }
-        = Haml::Engine.new(File.read('/Server/mmgd/public/images/pause.min.svg')).render
-      %a#backTop{:href => "#" }
-        = Haml::Engine.new(File.read('/Server/mmgd/public/images/back_top.min.svg')).render
-    %span.tweet <a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a>
-    %span.copy &copy; 2014 GoDaddy.com, LLC
-    #bg.bg(data-0="background-color:hsl(150,0%,95%)" data-4500="background-color:hsl(170,100%,52%)" data-10000="background-color:hsl(245,70%,60%)" data-15000="background-color:hsl(320,100%,52%)" data-18000="background-color:hsl(360,100%,52%)" data-21350="background-color:hsl(360,0%,95%)")
-    .scene
-      %img#godaddy_guy{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
-      %img#gd_speech{:src=> "images/gd_speech.min.svg", :alt => "GoDaddy guy speaks"}
-      %img#mimi{:src=> "images/mimi@2x.png", :alt => "Mad Mimi", :width => "143", :height => "214"}
-      %img#mimi_speech{:src=> "images/mimi_speech.min.svg", :alt => "Mimi speaks"}
-    .scene_wrapper
-      .bg_scene
-        #gd_city
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_bg.min.svg')).render
-        #mm_tree
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/mm_bg.min.svg')).render
-        #gd_car
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_car.min.svg')).render
-        #gd_glasses
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_glasses.min.svg')).render
-        #gd_star
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_star.min.svg')).render
-        #gd_plate
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_plate.min.svg')).render
-        #gd_fun
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_fun.min.svg')).render
-        #gd_blue
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_blue.min.svg')).render
-        #gd_blue_copy
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_blue_copy.min.svg')).render
-        #leaf
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/leaf.min.svg')).render
-        #river
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/river.min.svg')).render
-        #fish_big
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/fish_big.min.svg')).render
-        #fish_small
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/fish_small.min.svg')).render
-        #distant_sound
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/distant_sound.min.svg')).render
-        #heart
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/heart.min.svg')).render
-        #heart_small
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/heart_small.min.svg')).render
-        #idea
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/idea.min.svg')).render
-        #lalala
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/lalala.min.svg')).render
-        #email
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/email.min.svg')).render
-        #easy_to_read
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/easy_to_read.min.svg')).render
-        #awesome
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/awesome.min.svg')).render
-        #small_biz
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/small_biz.min.svg')).render
-        #big_biz
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/big_biz.min.svg')).render
-        #online
-          = Haml::Engine.new(File.read('/Server/mmgd/public/images/online.min.svg')).render
-    %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
-      %img{:src=> "images/chevron_down.min.svg"}
+    .wrapper
+      %p.start{:"data-anchor-target" => "#step-1"}
+        %span.large MMGD.
+      %p.standard{:"data-anchor-target" => "#step-2"}
+        %span The GoDaddy Guy zoomed around with a frown
+        %span.godaddy.speech.gd "I’ve got the excitement, I’m a man about town"
+      %p.standard{:"data-anchor-target" => "#step-3"}
+        %span.speech.gd
+          %span.godaddy "I have tons of fun, and I help people too
+          %span.godaddy But there's something missing, and I’m a little bit blue."
+      %p.standard{:"data-anchor-target" => "#step-4"}
+        %span While his mind was adrift like a leaf on a river,
+        %span a distant sound set his ears aquiver.
+      %p.standard{:"data-anchor-target" => "#step-5"}
+        %span.speech.gd
+          %span.godaddy "Hark! What's that beautiful singing?
+          %span.godaddy A melody charming and simple and ringing."
+      %p.standard{:"data-anchor-target" => "#step-6"}
+        %span.speech.gd
+          %span.godaddy "I must meet that singer, my heart is a-thumping.
+          %span.godaddy I have an idea — she's what I've been missing!"
+      %p.standard{:"data-anchor-target" => "#step-7"}
+        %span And under a tree, a delightful sight —
+        %span Mad Mimi sat singing, clear and bright.
+      %p.standard{:"data-anchor-target" => "#step-8"}
+        %span.speech.gd
+          %span.godaddy "Hey there, ahem, cough cough, who are you?
+          %span.godaddy You seem so special. What is it you do?"
+      %p.standard{:"data-anchor-target" => "#step-9"}
+        %span.speech.mm
+          %span.mimi "I delight readers with beautiful emails.
+          %span.mimi I'm sugar and spice and puppy dog tails"
+      %p.standard{:"data-anchor-target" => "#step-10"}
+        %span.speech.mm
+          %span.mimi "I'm easy to read newsletters and more.
+          %span.mimi I'm fun and feisty and I don't talk to bores."
+      %p.standard{:"data-anchor-target" => "#step-11"}
+        %span.speech.gd
+          %span.godaddy "I ain't boring. I'm awesome, you know!
+          %span.godaddy And I help small businesses get online and grow"
+      %p.finale.standard{:"data-anchor-target" => "#step-12"}
+        %span.speech.gd
+          %span.godaddy "Let's hang out, Mimi.
+          %span.godaddy We'll help people together!
+        %span.speech.gd
+          %span.godaddy Get online and get heard
+          %span.godaddy forever and ever!”
+      %p.end{:"data-anchor-target" => "#step-13"}
+        %span GoDaddy acquires Mad Mimi
+        %span — <a href="http://blog.madmimi.com/godaddy-mad-mimi/" title="GoDaddy acquires Mad Mimi - Mad Mimi Blog">Read more</a>
+      .controls
+        %a#play{:href => "#" }
+          = Haml::Engine.new(File.read('/Server/mmgd/public/images/play.min.svg')).render
+        %a#pause{:href => "#" }
+          = Haml::Engine.new(File.read('/Server/mmgd/public/images/pause.min.svg')).render
+        %a#backTop{:href => "#" }
+          = Haml::Engine.new(File.read('/Server/mmgd/public/images/back_top.min.svg')).render
+      %span.tweet <a href="http://twitter.com/home?status=GDMM. Check it out! http://cl.ly/0Y0P2S0b2H3v @GoDaddy @MadMimi ">Tweet this</a>
+      %span.copy &copy; 2014 GoDaddy.com, LLC
+      #bg.bg(data-0="background-color:hsl(150,0%,95%)" data-4500="background-color:hsl(170,100%,52%)" data-10000="background-color:hsl(245,70%,60%)" data-15000="background-color:hsl(320,100%,52%)" data-18000="background-color:hsl(360,100%,52%)" data-21350="background-color:hsl(360,0%,95%)")
+      .scene
+        %img#godaddy_guy{:src=> "images/godaddy.min.svg", :alt => "GoDaddy"}
+        %img#gd_speech{:src=> "images/gd_speech.min.svg", :alt => "GoDaddy guy speaks"}
+        %img#mimi{:src=> "images/mimi@2x.png", :alt => "Mad Mimi", :width => "143", :height => "214"}
+        %img#mimi_speech{:src=> "images/mimi_speech.min.svg", :alt => "Mimi speaks"}
+      .scene_wrapper
+        .bg_scene
+          #gd_city
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_bg.min.svg')).render
+          #mm_tree
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/mm_bg.min.svg')).render
+          #gd_car
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_car.min.svg')).render
+          #gd_glasses
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_glasses.min.svg')).render
+          #gd_star
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_star.min.svg')).render
+          #gd_plate
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_plate.min.svg')).render
+          #gd_fun
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_fun.min.svg')).render
+          #gd_blue
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_blue.min.svg')).render
+          #gd_blue_copy
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/gd_blue_copy.min.svg')).render
+          #leaf
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/leaf.min.svg')).render
+          #river
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/river.min.svg')).render
+          #fish_big
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/fish_big.min.svg')).render
+          #fish_small
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/fish_small.min.svg')).render
+          #distant_sound
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/distant_sound.min.svg')).render
+          #heart
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/heart.min.svg')).render
+          #heart_small
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/heart_small.min.svg')).render
+          #idea
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/idea.min.svg')).render
+          #lalala
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/lalala.min.svg')).render
+          #email
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/email.min.svg')).render
+          #easy_to_read
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/easy_to_read.min.svg')).render
+          #awesome
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/awesome.min.svg')).render
+          #small_biz
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/small_biz.min.svg')).render
+          #big_biz
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/big_biz.min.svg')).render
+          #online
+            = Haml::Engine.new(File.read('/Server/mmgd/public/images/online.min.svg')).render
+      %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
+        %img{:src=> "images/chevron_down.min.svg"}
     %section#step-1
     %section#step-2
     %section#step-3
