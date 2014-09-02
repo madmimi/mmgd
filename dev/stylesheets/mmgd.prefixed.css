@@ -138,12 +138,17 @@ html[data-ua*="Chrome"] .controls a#play, html[data-ua*="Chrome"] .controls a#pa
   stroke: none;
 }
 
+.copy,
+.tweet {
+  line-height: 40px;
+}
+
 .copy {
-  right: 10px;
+  right: 24px;
 }
 
 .tweet {
-  left: 10px;
+  left: 24px;
 }
 
 #mimi,

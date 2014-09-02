@@ -69,6 +69,7 @@ body {
   backface-visibility: hidden;
 }
 
+
 .controls {
   left: 50%;
   margin-left: -125px;
@@ -101,12 +102,17 @@ body {
   }
 }
 
+.copy,
+.tweet {
+  line-height: 40px;
+}
+
 .copy {
-  right: 10px;
+  right: 24px;
 }
 
 .tweet {
-  left: 10px;
+  left: 24px;
 }
 
 #mimi,
