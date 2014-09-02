@@ -95,21 +95,21 @@ p.end {
 
 @-skrollr-keyframes chevron {
   start {
-    opacity#{"[quadratic]"}: 1;
+    opacity: 1;
     transform-origin: top;
-    transform: translate3d(0px, -10px, 0px) scaleY(1);
+    transform: translate3d(0px,-10px,0px) scaleY(1);
     display: inline-block;
   }
   1500 {
-    opacity#{"[quadratic]"}: 0;
+    opacity: 0;
     transform-origin: top;
-    transform: translate3d(0px, 40px, 0px) scaleY(2.5);
+    transform: translate3d(0px,40px, 0px) scaleY(2.5);
     display: inline-block;
   }
   1501 {
-    opacity#{"[quadratic]"}: 0;
+    opacity: 0;
     transform-origin: top;
-    transform: translate3d(0px, 40px, 0px) scaleY(2.5);
+    transform: translate3d(0px,40px, 0px) scaleY(2.5);
     display: none;
   }
 }
