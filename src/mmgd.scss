@@ -85,6 +85,14 @@ body {
     &:hover {
       opacity: 1;
     }
+    html[data-ua*="Safari"] &#play {
+      visibility: hidden;
+      position: absolute;
+    }
+    html[data-ua*="Chrome"] &#play {
+      visibility: visible;
+      position: static;
+    }
   }
   svg * {
     stroke: none;

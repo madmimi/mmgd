@@ -126,6 +126,14 @@ body {
 .controls a:hover {
   opacity: 1;
 }
+html[data-ua*="Safari"] .controls a#play {
+  visibility: hidden;
+  position: absolute;
+}
+html[data-ua*="Chrome"] .controls a#play {
+  visibility: visible;
+  position: static;
+}
 .controls svg * {
   stroke: none;
 }
