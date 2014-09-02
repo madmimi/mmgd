@@ -449,33 +449,46 @@ p.end span {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1640px) {
   html {
     font-size: 50%;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   html {
     font-size: 44%;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
   html {
     font-size: 42%;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1123px) {
+  html {
+    font-size: 36%;
+  }
+
   .scene {
     transform: scale(0.8);
     left: 0;
     right: 0;
-    top: 10%;
+    top: 0%;
   }
   .scene img {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 10%;
+    top: 0%;
+  }
+  .scene img#gd_speech, .scene img#mimi_speech {
+    top: 0%;
+  }
+  .scene img#gd_speech {
+    left: -8%;
+  }
+  .scene img#mimi_speech {
+    left: 30%;
   }
 
   .bg_scene {
@@ -490,8 +503,8 @@ p.end span {
 
   p {
     margin-top: 0;
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 12%;
+    padding-right: 12%;
     width: 100%;
     text-align: center;
   }
@@ -502,17 +515,38 @@ p.end span {
     margin-bottom: 4px;
   }
   p.finale {
-    margin-top: -50px;
+    margin-top: -30px;
   }
-  p.finale span:first-of-type {
-    margin-bottom: 0;
-  }
-  p.finale span:nth-of-type(3) {
-    margin-top: 30px;
-  }
-  p.finale span:nth-of-type(3),
-  p.finale span:nth-of-type(4) {
+  p.finale > span:nth-of-type(2) {
+    margin-top: 10px;
     margin-left: 0;
+  }
+  p.end {
+    top: 50%;
+  }
+
+  .speech {
+    margin-top: 10px;
+  }
+  .speech:after {
+    left: 50%;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent white transparent;
+    top: 0px;
+    margin-left: -12px;
+  }
+  .speech:before {
+    left: 50%;
+    border-width: 0 14px 14px 14px;
+    border-color: transparent transparent #77a200 transparent;
+    top: -1px;
+    margin-left: -14px;
+  }
+  .speech.mm:after {
+    border-color: transparent transparent #ffff42 transparent;
+  }
+  .speech.mm:before {
+    border-color: transparent transparent #9b0000 transparent;
   }
 }
 @media screen and (max-width: 767px) {
@@ -557,34 +591,6 @@ p.end span {
     padding-right: 30px;
     text-align: center;
   }
-  p.finale {
-    margin-top: 0;
-  }
-  p.finale > span:nth-of-type(2) {
-    margin-top: 10px;
-    margin-left: 0;
-  }
-
-  .speech:after {
-    left: 50%;
-    border-width: 0 12px 12px 12px;
-    border-color: transparent transparent white transparent;
-    top: 0px;
-    margin-left: -12px;
-  }
-  .speech:before {
-    left: 50%;
-    border-width: 0 14px 14px 14px;
-    border-color: transparent transparent #77a200 transparent;
-    top: -1px;
-    margin-left: -14px;
-  }
-  .speech.mm:after {
-    border-color: transparent transparent #ffff42 transparent;
-  }
-  .speech.mm:before {
-    border-color: transparent transparent #9b0000 transparent;
-  }
 
   #gd_speech {
     top: 12%;
@@ -598,10 +604,15 @@ p.end span {
 }
 @media screen and (max-device-width: 1024px) and (orientation: landscape) {
   html {
-    font-size: 50%;
+    font-size: 36%;
   }
 
   .scene {
     transform: scale(0.5);
+    top: -20%;
+  }
+
+  .chevron_down {
+    top: 60%;
   }
 }

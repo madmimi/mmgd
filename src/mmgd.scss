@@ -421,35 +421,48 @@ p.end {
 
 // media queries
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1640px) {
   html {
     font-size: 50%;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   html {
     font-size: 44%;
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
   html {
     font-size: 42%;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1123px) {
+  html {
+    font-size: 36%;
+  }
   .scene {
     transform: scale(0.8);
     left: 0;
     right: 0;
-    top: 10%;
+    top: 0%;
     img {
       left: 0;
       right: 0;
       margin: 0 auto;
-      top: 10%;
+      top: 0%;
+      &#gd_speech,
+      &#mimi_speech {
+        top: 0%;
+      }
+      &#gd_speech {
+        left: -8%;
+      }
+      &#mimi_speech {
+        left: 30%;
+      }
     }
   }
   .bg_scene {
@@ -466,8 +479,8 @@ p.end {
   }
   p {
     margin-top: 0;
-    padding-left: 16%;
-    padding-right: 16%;
+    padding-left: 12%;
+    padding-right: 12%;
     width: 100%;
     text-align: center;
     &.start {
@@ -479,16 +492,38 @@ p.end {
       }
     }
     &.finale {
-      margin-top: -50px;
-      span:first-of-type {
-        margin-bottom: 0;
-      }
-      span:nth-of-type(3) {
-        margin-top: 30px;
-      }
-      span:nth-of-type(3),
-      span:nth-of-type(4) {
+      margin-top: -30px;
+      > span:nth-of-type(2) {
+        margin-top: 10px;
         margin-left: 0;
+      }
+    }
+    &.end {
+      top: 50%;
+    }
+  }
+  .speech {
+    margin-top: 10px;
+    &:after {
+      left: 50%;
+      border-width: 0 12px 12px 12px;
+      border-color: transparent transparent white transparent;
+      top: 0px;
+      margin-left: -12px;
+    }
+    &:before {
+      left: 50%;
+      border-width: 0 14px 14px 14px;
+      border-color: transparent transparent $godaddy transparent;
+      top: -1px;
+      margin-left: -14px;
+    }
+    &.mm {
+      &:after {
+        border-color: transparent transparent #F8E91A + 40 transparent;
+      }
+      &:before {
+        border-color: transparent transparent $mimi - 100 transparent;
       }
     }
   }
@@ -528,37 +563,6 @@ p.end {
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
-    &.finale {
-      margin-top: 0;
-      > span:nth-of-type(2) {
-        margin-top: 10px;
-        margin-left: 0;
-      }
-    }
-  }
-  .speech {
-    &:after {
-      left: 50%;
-      border-width: 0 12px 12px 12px;
-      border-color: transparent transparent white transparent;
-      top: 0px;
-      margin-left: -12px;
-    }
-    &:before {
-      left: 50%;
-      border-width: 0 14px 14px 14px;
-      border-color: transparent transparent $godaddy transparent;
-      top: -1px;
-      margin-left: -14px;
-    }
-    &.mm {
-      &:after {
-        border-color: transparent transparent #F8E91A + 40 transparent;
-      }
-      &:before {
-        border-color: transparent transparent $mimi - 100 transparent;
-      }
-    }
   }
   #gd_speech {
     top: 12%;
@@ -574,9 +578,13 @@ p.end {
 
 @media screen and (max-device-width: 1024px) and (orientation: landscape) {
   html {
-    font-size: 50%;
+    font-size: 36%;
   }
   .scene {
     transform: scale(0.5);
+    top: -20%;
+  }
+  .chevron_down {
+    top: 60%;
   }
 }
