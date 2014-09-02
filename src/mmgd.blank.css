@@ -122,11 +122,11 @@ body {
 .controls a:hover {
   opacity: 1;
 }
-html[data-ua*="Safari"] .controls a#play {
+html[data-ua*="Safari"] .controls a#play, html[data-ua*="Safari"] .controls a#pause {
   visibility: hidden;
   position: absolute;
 }
-html[data-ua*="Chrome"] .controls a#play {
+html[data-ua*="Chrome"] .controls a#play, html[data-ua*="Chrome"] .controls a#pause {
   visibility: visible;
   position: static;
 }

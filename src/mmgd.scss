@@ -85,11 +85,13 @@ body {
     &:hover {
       opacity: 1;
     }
-    html[data-ua*="Safari"] &#play {
+    html[data-ua*="Safari"] &#play,
+    html[data-ua*="Safari"] &#pause {
       visibility: hidden;
       position: absolute;
     }
-    html[data-ua*="Chrome"] &#play {
+    html[data-ua*="Chrome"] &#play,
+    html[data-ua*="Chrome"] &#pause {
       visibility: visible;
       position: static;
     }
