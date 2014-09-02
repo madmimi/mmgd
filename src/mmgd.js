@@ -8,7 +8,6 @@
       PLAY_SPEED        = 48000;
 
   var firstSection  = $('body section:first-of-type'),
-      downLink      = $('a.chevron_down'),
       playLink      = $('a#play'),
       pauseLink     = $('a#pause'),
       backTopLink   = $('a#backTop');
@@ -110,11 +109,6 @@
   };
 
   $(document).ready(function() {
-
-    downLink.bind('click', function(e) {
-      e.preventDefault();
-      scrollToNextSection();
-    });
 
     $(document).keydown(function(e) {
       switch(e.which) {

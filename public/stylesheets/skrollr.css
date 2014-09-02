@@ -8,37 +8,31 @@ p.standard {
     opacity: 0;
     transform: translate3d(0px, 30px, 0px);
   }
-
   250-center-top {
     visibility: visible;
     opacity: 0;
     transform: translate3d(0px, 30px, 0px);
   }
-
   center-top {
     visibility: visible;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-
   center {
     visibility: visible;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-
   250-center-bottom {
     visibility: visible;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-
   center-bottom {
     visibility: visible;
     opacity: 0;
     transform: translate3d(0px, -60px, 0px);
   }
-
   -1-center-bottom {
     visibility: hidden;
     opacity: 0;
@@ -56,19 +50,16 @@ p.start {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
-
   250-center-bottom {
     visibility: visible;
     opacity: 1;
     transform: translate3d(0px, -8px, 0px);
   }
-
   center-bottom {
     visibility: visible;
     opacity: 0;
     transform: translate3d(0px, -60px, 0px);
   }
-
   -1-center-bottom {
     visibility: hidden;
     opacity: 0;
@@ -86,13 +77,11 @@ p.end {
     opacity: 0;
     transform: translate3d(0px, 40px, 0px);
   }
-
   21465 {
     visibility: visible;
     opacity: 0;
     transform: translate3d(0px, 40px, 0px);
   }
-
   22300 {
     visibility: visible;
     opacity: 1;
@@ -106,21 +95,19 @@ p.end {
 
 @-skrollr-keyframes chevron {
   start {
-    opacity[quadratic]: 1;
+    opacity#{"[quadratic]"}: 1;
     transform-origin: top;
     transform: translate3d(0px, -10px, 0px) scaleY(1);
     display: inline-block;
   }
-
   1500 {
-    opacity[quadratic]: 0;
+    opacity#{"[quadratic]"}: 0;
     transform-origin: top;
     transform: translate3d(0px, 40px, 0px) scaleY(2.5);
     display: inline-block;
   }
-
   1501 {
-    opacity[quadratic]: 0;
+    opacity#{"[quadratic]"}: 0;
     transform-origin: top;
     transform: translate3d(0px, 40px, 0px) scaleY(2.5);
     display: none;
@@ -134,67 +121,55 @@ p.end {
 @-skrollr-keyframes godaddyGuy {
   start {
     opacity: 0;
-    transform: scale(0.75) translate3d(0px, 0px, 0px);
+    transform: scale(0.75) translate3d(0px,0px,0px);
   }
-
   2100 {
     opacity: 1;
-    transform: scale(1) translate3d(0px, 0px, 0px);
+    transform: scale(1) translate3d(0px,0px,0px);
   }
-
   6600 {
     opacity: 1;
-    transform: scale(1) translate3d(0px, 0px, 0px);
+    transform: scale(1) translate3d(0px,0px,0px);
   }
-
   7200 {
     opacity: 1;
-    transform: scale(1.1) translate3d(50px, 0px, 0px);
+    transform: scale(1.1) translate3d(50px,0px,0px);
   }
-
   10400 {
     opacity: 1;
-    transform: scale(1.1) translate3d(50px, 0px, 0px);
+    transform: scale(1.1) translate3d(50px,0px,0px);
   }
-
   11300 {
     opacity: 1;
-    transform: scale(0.75) translate3d(-150px, -60px, 0px);
+    transform: scale(0.75) translate3d(-150px,-60px,0px);
   }
-
   11400 {
     opacity: 1;
-    transform: scale(0.75) translate3d(-150px, -60px, 0px);
+    transform: scale(0.75) translate3d(-150px,-60px,0px);
   }
-
   12300 {
     opacity: 1;
-    transform: scale(0.75) translate3d(-150px, -60px, 0px);
+    transform: scale(0.75) translate3d(-150px,-60px,0px);
   }
-
   12600 {
     opacity: 1;
-    transform: scale(0.85) translate3d(-150px, -60px, 0px);
+    transform: scale(0.85) translate3d(-150px,-60px,0px);
   }
-
   17800 {
     opacity: 1;
-    transform: scale(0.85) translate3d(-150px, -60px, 0px);
+    transform: scale(0.85) translate3d(-150px,-60px,0px);
   }
-
   18100 {
     opacity: 1;
-    transform: scale(1) translate3d(-150px, -60px, 0px);
+    transform: scale(1) translate3d(-150px,-60px,0px);
   }
-
   19500 {
     opacity: 1;
-    transform: scale(1) translate3d(-150px, -60px, 0px);
+    transform: scale(1) translate3d(-150px,-60px,0px);
   }
-
   20000 {
     opacity: 1;
-    transform: scale(1) translate3d(-120px, 0px, 0px);
+    transform: scale(1) translate3d(-120px,0px,0px);
   }
 }
 
@@ -205,97 +180,79 @@ p.end {
 @-skrollr-keyframes gdSpeech {
   0 {
     opacity: 0;
-    transform: scale(0.5) translate3d(115px, 90px, 0px);
+    transform: scale(0.5) translate3d(115px,90px,0px);
   }
-
   1100 {
     opacity: 0;
-    transform: scale(0.5) translate3d(115px, 90px, 0px);
+    transform: scale(0.5) translate3d(115px,90px,0px);
   }
-
   1690 {
     opacity: 1;
-    transform: scale(1) translate3d(120px, 20px, 0px);
+    transform: scale(1) translate3d(120px,20px,0px);
   }
-
-  4680 {
+  4680  {
     opacity: 1;
-    transform: scale(1) translate3d(120px, 20px, 0px);
+    transform: scale(1) translate3d(120px,20px,0px);
   }
-
-  4827 {
+  4827  {
     opacity: 0;
-    transform: scale(0.5) translate3d(170px, 60px, 0px);
+    transform: scale(0.5) translate3d(170px,60px,0px);
   }
-
-  6590 {
+  6590  {
     opacity: 0;
-    transform: scale(0.5) translate3d(170px, 40px, 0px);
+    transform: scale(0.5) translate3d(170px,40px,0px);
   }
-
-  7227 {
+  7227  {
     opacity: 1;
-    transform: scale(1) translate3d(180px, 10px, 0px);
+    transform: scale(1) translate3d(180px,10px,0px);
   }
-
-  10400 {
+  10400  {
     opacity: 1;
-    transform: scale(1) translate3d(180px, 10px, 0px);
+    transform: scale(1) translate3d(180px,10px,0px);
   }
-
-  11100 {
+  11100  {
     opacity: 0;
-    transform: scale(0.5) translate3d(50px, 15px, 0px);
+    transform: scale(0.5) translate3d(50px,15px,0px);
   }
-
-  12164 {
+  12164  {
     opacity: 0;
-    transform: scale(0.5) translate3d(-15px, 0px, 0px);
+    transform: scale(0.5) translate3d(-15px,0px,0px);
   }
-
-  12364 {
+  12364  {
     opacity: 1;
-    transform: scale(1) translate3d(-10px, -15px, 0px);
+    transform: scale(1) translate3d(-10px,-15px,0px);
   }
-
-  13800 {
+  13800  {
     opacity: 1;
-    transform: scale(1) translate3d(-10px, -15px, 0px);
+    transform: scale(1) translate3d(-10px,-15px,0px);
   }
-
-  13900 {
+  13900  {
     opacity: 0;
-    transform: scale(0.5) translate3d(-15px, 0px, 0px);
+    transform: scale(0.5) translate3d(-15px,0px,0px);
   }
-
-  17564 {
+  17564  {
     opacity: 0;
-    transform: scale(0.5) translate3d(-15px, 0px, 0px);
+    transform: scale(0.5) translate3d(-15px,0px,0px);
   }
-
-  17864 {
+  17864  {
     opacity: 1;
-    transform: scale(1) translate3d(-20px, -10px, 0px);
+    transform: scale(1) translate3d(-20px,-10px,0px);
   }
-
-  19750 {
+  19750  {
     opacity: 1;
-    transform: scale(1) translate3d(-20px, -10px, 0px);
+    transform: scale(1) translate3d(-20px,-10px,0px);
   }
-
-  20050 {
+  20050  {
     opacity: 1;
-    transform: scale(1) translate3d(-10px, 0px, 0px);
+    transform: scale(1) translate3d(-10px,0px,0px);
   }
-
-  21070 {
+  21070  {
     opacity: 1;
-    transform: scale(1) translate3d(-10px, 0px, 0px);
+    transform: scale(1) translate3d(-10px,0px,0px);
   }
-
-  21270 {
+  21270  {
     opacity: 0;
-    transform: scale(0.5) translate3d(-10px, 0px, 0px);
+    transform: scale(0.5) translate3d(-10px,0px,0px);
   }
 }
 
@@ -306,29 +263,26 @@ p.end {
 @-skrollr-keyframes mimiSpeech {
   0 {
     opacity: 0;
-    transform: scale(0.5) translate3d(-10px, 20px, 0px);
+    transform: scale(0.5) translate3d(-10px,20px,0px);
   }
-
   13837 {
     opacity: 0;
-    transform: scale(0.5) translate3d(-10px, 20px, 0px);
+    transform: scale(0.5) translate3d(-10px,20px,0px);
   }
-
-  14477 {
+  14477  {
     opacity: 1;
-    transform: scale(1) translate3d(0px, 0px, 0px);
+    transform: scale(1) translate3d(0px,0px,0px);
   }
-
-  17435 {
+  17435  {
     opacity: 1;
-    transform: scale(1) translate3d(0px, 0px, 0px);
+    transform: scale(1) translate3d(0px,0px,0px);
   }
-
-  17635 {
+  17635  {
     opacity: 0;
-    transform: scale(0.5) translate3d(0px, 0px, 0px);
+    transform: scale(0.5) translate3d(0px,0px,0px);
   }
 }
+
 
 #mimi {
   -skrollr-animation-name: mimi;
@@ -337,37 +291,31 @@ p.end {
 @-skrollr-keyframes mimi {
   start {
     opacity: 0;
-    transform: scale(0.5) translate3d(100px, 80px, 0px);
+    transform: scale(0.5) translate3d(100px,80px,0px);
   }
-
   10900 {
     opacity: 0;
-    transform: scale(0.5) translate3d(100px, 80px, 0px);
+    transform: scale(0.5) translate3d(100px,80px,0px);
   }
-
   11400 {
     opacity: 1;
-    transform: scale(1) translate3d(50px, 40px, 0px);
+    transform: scale(1) translate3d(50px,40px,0px);
   }
-
   14100 {
     opacity: 1;
-    transform: scale(1) translate3d(50px, 40px, 0px);
+    transform: scale(1) translate3d(50px,40px,0px);
   }
-
   14700 {
     opacity: 1;
-    transform: scale(1.2) translate3d(50px, 40px, 0px);
+    transform: scale(1.2) translate3d(50px,40px,0px);
   }
-
   20180 {
     opacity: 1;
-    transform: scale(1.2) translate3d(50px, 40px, 0px);
+    transform: scale(1.2) translate3d(50px,40px,0px);
   }
-
   20770 {
     opacity: 1;
-    transform: scale(1.2) translate3d(50px, 0px, 0px);
+    transform: scale(1.2) translate3d(50px,0px,0px);
   }
 }
 
@@ -382,28 +330,24 @@ p.end {
     transform: scale(0) translateZ(0);
     opacity: 0;
   }
-
   50 {
     visibility: visible;
     stroke-dashoffset: 3000;
     transform: scale(0) translateZ(0);
     opacity: 0;
   }
-
   2000 {
     visibility: visible;
     stroke-dashoffset: 0;
     transform: scale(1) translateZ(0);
     opacity: 1;
   }
-
   4100 {
     visibility: visible;
     stroke-dashoffset: 3000;
     opacity: 0;
     transform: scale(0.75) translateZ(0);
   }
-
   4101 {
     visibility: hidden;
     stroke-dashoffset: 3000;
@@ -422,25 +366,21 @@ p.end {
     stroke-dashoffset: 2400;
     transform: translateZ(0);
   }
-
   9800 {
     visibility: hidden;
     stroke-dashoffset: 2400;
     transform: translateZ(0);
   }
-
   9900 {
     visibility: visible;
     stroke-dashoffset: 2400;
     transform: translateZ(0);
   }
-
   12500 {
     visibility: visible;
     stroke-dashoffset: 0;
     transform: translateZ(0);
   }
-
   13500 {
     visibility: visible;
     stroke-dashoffset: 2400;
@@ -455,31 +395,27 @@ p.end {
 @-skrollr-keyframes gdCar {
   690 {
     visibility: hidden;
-    transform: translate3d(-200px, -130px, 0px) scale(0);
+    transform: translate3d(-200px,-130px,0px) scale(0);
     opacity: 1;
   }
-
   700 {
     visibility: visible;
-    transform: translate3d(-200px, -130px, 0px) scale(0);
+    transform: translate3d(-200px,-130px,0px) scale(0);
     opacity: 1;
   }
-
   2100 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) scale(1);
+    transform: translate3d(0px,0px,0px) scale(1);
     opacity: 1;
   }
-
   4500 {
     visibility: visible;
-    transform: translate3d(1250px, 600px, 0px) scale(4.25);
+    transform: translate3d(1250px,600px,0px) scale(4.25);
     opacity: 0;
   }
-
   4510 {
     visibility: hidden;
-    transform: translate3d(1250px, 600px, 0px) scale(4.25);
+    transform: translate3d(1250px,600px,0px) scale(4.25);
     opacity: 0;
   }
 }
@@ -491,31 +427,27 @@ p.end {
 @-skrollr-keyframes gdStar {
   690 {
     visibility: hidden;
-    transform: translate3d(50px, 30px, 0px) rotate(-360deg) scale(0);
+    transform: translate3d(50px,30px,0px) rotate(-360deg) scale(0);
     opacity: 0;
   }
-
   700 {
     visibility: visible;
-    transform: translate3d(50px, 30px, 0px) rotate(-360deg) scale(0);
+    transform: translate3d(50px,30px,0px) rotate(-360deg) scale(0);
     opacity: 0;
   }
-
   2500 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) rotate(0deg) scale(1);
+    transform: translate3d(0px,0px,0px) rotate(0deg) scale(1);
     opacity: 1;
   }
-
   3000 {
     visibility: visible;
-    transform: translate3d(-80px, -20px, 0px) rotate(180deg) scale(3);
+    transform: translate3d(-80px,-20px,0px) rotate(180deg) scale(3);
     opacity: 0;
   }
-
   3010 {
     visibility: hidden;
-    transform: translate3d(-80px, -20px, 0px) rotate(180deg) scale(3);
+    transform: translate3d(-80px,-20px,0px) rotate(180deg) scale(3);
     opacity: 0;
   }
 }
@@ -527,31 +459,27 @@ p.end {
 @-skrollr-keyframes gdGlasses {
   2090 {
     visibility: hidden;
-    transform: translate3d(-20px, 100px, 0px) rotate(0deg) scale(0.5);
+    transform: translate3d(-20px,100px,0px) rotate(0deg) scale(0.5);
     opacity: 0;
   }
-
   2100 {
     visibility: visible;
-    transform: translate3d(-20px, 100px, 0px) rotate(0deg) scale(0.5);
+    transform: translate3d(-20px,100px,0px) rotate(0deg) scale(0.5);
     opacity: 0;
   }
-
   2700 {
     visibility: visible;
-    transform: translate3d(10px, -30px, 0px) rotate(20deg) scale(1);
+    transform: translate3d(10px,-30px,0px) rotate(20deg) scale(1);
     opacity: 1;
   }
-
   3400 {
     visibility: visible;
-    transform: translate3d(50px, -90px, 0px) rotate(50deg) scale(2);
+    transform: translate3d(50px,-90px,0px) rotate(50deg) scale(2);
     opacity: 0;
   }
-
   3410 {
     visibility: hidden;
-    transform: translate3d(50px, -90px, 0px) rotate(50deg) scale(2);
+    transform: translate3d(50px,-90px,0px) rotate(50deg) scale(2);
     opacity: 0;
   }
 }
@@ -563,34 +491,31 @@ p.end {
 @-skrollr-keyframes gdPlate {
   1940 {
     visibility: hidden;
-    transform: translate3d(-50px, -230px, 0px);
+    transform: translate3d(-50px,-230px,0px);
     opacity: 0;
   }
-
   1950 {
     visibility: visible;
-    transform: translate3d(-50px, -230px, 0px);
+    transform: translate3d(-50px,-230px,0px);
     opacity: 0;
   }
-
   2300 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   2900 {
     visibility: visible;
-    transform: translate3d(10px, 30px, 0px);
+    transform: translate3d(10px,30px,0px);
     opacity: 0;
   }
-
   2910 {
     visibility: hidden;
-    transform: translate3d(10px, 30px, 0px);
+    transform: translate3d(10px,30px,0px);
     opacity: 0;
   }
 }
+
 
 #gd_fun svg {
   -skrollr-animation-name: gdFun;
@@ -599,34 +524,31 @@ p.end {
 @-skrollr-keyframes gdFun {
   3490 {
     visibility: hidden;
-    transform: translate3d(-20px, 10px, 0px) scale(0);
+    transform: translate3d(-20px,10px,0px) scale(0);
     opacity: 0;
   }
-
   3500 {
     visibility: visible;
-    transform: translate3d(-20px, 10px, 0px) scale(0);
+    transform: translate3d(-20px,10px,0px) scale(0);
     opacity: 0;
   }
-
   3700 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) scale(1);
+    transform: translate3d(0px,0px,0px) scale(1);
     opacity: 1;
   }
-
   6000 {
     visibility: visible;
-    transform: translate3d(10px, -3px, 0px) scale(0);
+    transform: translate3d(10px,-3px,0px) scale(0);
     opacity: 0;
   }
-
   6010 {
     visibility: hidden;
-    transform: translate3d(10px, -3px, 0px) scale(0);
+    transform: translate3d(10px,-3px,0px) scale(0);
     opacity: 0;
   }
 }
+
 
 #gd_blue svg {
   -skrollr-animation-name: gdBlue;
@@ -635,31 +557,27 @@ p.end {
 @-skrollr-keyframes gdBlue {
   3890 {
     visibility: hidden;
-    transform: translate3d(60px, -50px, 0px) scale(0.5);
+    transform: translate3d(60px,-50px,0px) scale(0.5);
     opacity: 0;
   }
-
   3900 {
     visibility: visible;
-    transform: translate3d(60px, -50px, 0px) scale(0.5);
+    transform: translate3d(60px,-50px,0px) scale(0.5);
     opacity: 0;
   }
-
   4200 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) scale(1);
+    transform: translate3d(0px,0px,0px) scale(1);
     opacity: 1;
   }
-
   4700 {
     visibility: visible;
-    transform: translate3d(-20px, 15px, 0px) scale(0.5);
+    transform: translate3d(-20px,15px,0px) scale(0.5);
     opacity: 0;
   }
-
   4710 {
     visibility: hidden;
-    transform: translate3d(-20px, 15px, 0px) scale(0.5);
+    transform: translate3d(-20px,15px,0px) scale(0.5);
     opacity: 0;
   }
 }
@@ -672,35 +590,31 @@ p.end {
   4390 {
     visibility: hidden;
     stroke-dashoffset: 450;
-    transform: translate3d(60px, -50px, 0px) scale(1);
+    transform: translate3d(60px,-50px,0px) scale(1);
     opacity: 1;
   }
-
   4100 {
     visibility: visible;
     stroke-dashoffset: 450;
-    transform: translate3d(60px, -50px, 0px) scale(1);
+    transform: translate3d(60px,-50px,0px) scale(1);
     opacity: 1;
   }
-
   4700 {
     visibility: visible;
     stroke-dashoffset: 0;
-    transform: translate3d(0px, 0px, 0px) scale(1.25);
+    transform: translate3d(0px,0px,0px) scale(1.25);
     opacity: 1;
   }
-
   5200 {
     visibility: visible;
     stroke-dashoffset: 0;
-    transform: translate3d(-40px, 30px, 0px) scale(1);
+    transform: translate3d(-40px,30px,0px) scale(1);
     opacity: 0;
   }
-
   5210 {
     visibility: hidden;
     stroke-dashoffset: 0;
-    transform: translate3d(-40px, 30px, 0px) scale(1);
+    transform: translate3d(-40px,30px,0px) scale(1);
     opacity: 0;
   }
 }
@@ -712,55 +626,47 @@ p.end {
 @-skrollr-keyframes AniLeaf {
   5530 {
     visibility: hidden;
-    transform: translate3d(20px, 40px, 0px) scale(0.9) rotate(-30deg);
+    transform: translate3d(20px,40px,0px) scale(0.9) rotate(-30deg);
     opacity: 0;
   }
-
   5540 {
     visibility: visible;
-    transform: translate3d(20px, 40px, 0px) scale(0.9) rotate(-30deg);
+    transform: translate3d(20px,40px,0px) scale(0.9) rotate(-30deg);
     opacity: 0;
   }
-
   5640 {
     visibility: visible;
-    transform: translate3d(0px, 100px, 0px) scale(0.8) rotate(20deg);
+    transform: translate3d(0px,100px,0px) scale(0.8) rotate(20deg);
     opacity: 1;
   }
-
   5740 {
     visibility: visible;
-    transform: translate3d(-10px, 150px, 0px) scale(0.6) rotate(-20deg);
+    transform: translate3d(-10px,150px,0px) scale(0.6) rotate(-20deg);
     opacity: 1;
   }
-
   5840 {
     visibility: visible;
-    transform: translate3d(5px, 190px, 0px) scale(0.3) rotate(10deg);
+    transform: translate3d(5px,190px,0px) scale(0.3) rotate(10deg);
     opacity: 1;
   }
-
   5940 {
     visibility: visible;
-    transform: translate3d(-5px, 210px, 0px) scale(0.2) rotate(-10deg);
+    transform: translate3d(-5px,210px,0px) scale(0.2) rotate(-10deg);
     opacity: 1;
   }
-
   6040 {
     visibility: visible;
-    transform: translate3d(0px, 220px, 0px) scale(0.1) rotate(8deg);
+    transform: translate3d(0px,220px,0px) scale(0.1) rotate(8deg);
     opacity: 1;
   }
-
   6140 {
     visibility: visible;
-    transform: translate3d(2px, 225px, 0px) scale(0) rotate(-10deg);
+    transform: translate3d(2px,225px,0px) scale(0.0) rotate(-10deg);
     opacity: 0;
   }
-
   6150 {
     visibility: hidden;
-    transform: translate3d(2px, 225px, 0px) scale(0) rotate(-10deg);
+    transform: translate3d(2px,225px,0px) scale(0.0) rotate(-10deg);
     opacity: 0;
   }
 }
@@ -776,28 +682,24 @@ p.end {
     transform: scale(1) translateZ(0px);
     opacity: 1;
   }
-
   4940 {
     visibility: visible;
     stroke-dashoffset: 760;
     transform: scale(1) translateZ(0px);
     opacity: 1;
   }
-
   5340 {
     visibility: visible;
     stroke-dashoffset: 0;
     transform: scale(1.25) translateZ(0px);
     opacity: 1;
   }
-
   6140 {
     visibility: visible;
     stroke-dashoffset: 760;
     opacity: 0;
     transform: scale(1) translateZ(0px);
   }
-
   6150 {
     visibility: hidden;
     stroke-dashoffset: 760;
@@ -814,35 +716,31 @@ p.end {
   5290 {
     visibility: hidden;
     transform-origin: 10px 10px;
-    transform: rotate(-20deg) translate3d(-50px, 20px, 0px);
+    transform: rotate(-20deg) translate3d(-50px,20px,0px);
     opacity: 0;
   }
-
   5300 {
     visibility: visible;
     transform-origin: 10px 10px;
-    transform: rotate(-20deg) translate3d(-50px, 20px, 0px);
+    transform: rotate(-20deg) translate3d(-50px,20px,0px);
     opacity: 0;
   }
-
   5450 {
     visibility: visible;
     transform-origin: 10px 10px;
-    transform: rotate(0deg) translate3d(0px, -10px, 0px);
+    transform: rotate(0deg) translate3d(0px,-10px,0px);
     opacity: 1;
   }
-
   5550 {
     visibility: visible;
-    transform-origin: 10px 10px;
-    transform: rotate(30deg) translate3d(50px, -10px, 0px);
+    transform-origin:10px 10px;
+    transform: rotate(30deg) translate3d(50px,-10px,0px);
     opacity: 0;
   }
-
   5560 {
     visibility: hidden;
-    transform-origin: 10px 10px;
-    transform: rotate(30deg) translate3d(50px, -10px, 0px);
+    transform-origin:10px 10px;
+    transform: rotate(30deg) translate3d(50px,-10px,0px);
     opacity: 0;
   }
 }
@@ -855,35 +753,31 @@ p.end {
   5440 {
     visibility: hidden;
     transform-origin: 10px 10px;
-    transform: rotate(-20deg) translate3d(-50px, 20px, 0px);
+    transform: rotate(-20deg) translate3d(-50px,20px,0px);
     opacity: 0;
   }
-
   5450 {
     visibility: visible;
     transform-origin: 10px 10px;
-    transform: rotate(-20deg) translate3d(-50px, 20px, 0px);
+    transform: rotate(-20deg) translate3d(-50px,20px,0px);
     opacity: 0;
   }
-
   5600 {
     visibility: visible;
     transform-origin: 10px 10px;
-    transform: rotate(0deg) translate3d(0px, -10px, 0px);
+    transform: rotate(0deg) translate3d(0px,-10px,0px);
     opacity: 1;
   }
-
   5700 {
     visibility: visible;
-    transform-origin: 10px 10px;
-    transform: rotate(30deg) translate3d(50px, -10px, 0px);
+    transform-origin:10px 10px;
+    transform: rotate(30deg) translate3d(50px,-10px,0px);
     opacity: 0;
   }
-
   5710 {
     visibility: hidden;
-    transform-origin: 10px 10px;
-    transform: rotate(30deg) translate3d(50px, -10px, 0px);
+    transform-origin:10px 10px;
+    transform: rotate(30deg) translate3d(50px,-10px,0px);
     opacity: 0;
   }
 }
@@ -895,31 +789,27 @@ p.end {
 @-skrollr-keyframes distantSound {
   5840 {
     visibility: hidden;
-    transform: translate3d(120px, -50px, 0px) scale(0.5);
+    transform: translate3d(120px,-50px,0px) scale(0.5);
     opacity: 0;
   }
-
   5850 {
     visibility: visible;
-    transform: translate3d(120px, -50px, 0px) scale(0.5);
+    transform: translate3d(120px,-50px,0px) scale(0.5);
     opacity: 0;
   }
-
   6200 {
     visibility: visible;
-    transform: translate3d(40px, -20px, 0px) scale(1);
+    transform: translate3d(40px,-20px,0px) scale(1);
     opacity: 1;
   }
-
   6900 {
     visibility: visible;
-    transform: translate3d(-60px, 30px, 0px) scale(0.5);
+    transform: translate3d(-60px,30px,0px) scale(0.5);
     opacity: 0;
   }
-
   6910 {
     visibility: hidden;
-    transform: translate3d(-60px, 30px, 0px) scale(0.5);
+    transform: translate3d(-60px,30px,0px) scale(0.5);
     opacity: 0;
   }
 }
@@ -931,31 +821,27 @@ p.end {
 @-skrollr-keyframes heart {
   8890 {
     visibility: hidden;
-    transform: translate3d(0px, 20px, 0px) scale(0.5);
+    transform: translate3d(0px,20px,0px) scale(0.5);
     opacity: 0;
   }
-
   8900 {
     visibility: visible;
-    transform: translate3d(0px, 20px, 0px) scale(0.5);
+    transform: translate3d(0px,20px,0px) scale(0.5);
     opacity: 0;
   }
-
   9200 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) scale(1);
+    transform: translate3d(0px,0px,0px) scale(1);
     opacity: 1;
   }
-
   9800 {
     visibility: visible;
-    transform: translate3d(0px, -20px, 0px) scale(0.5);
+    transform: translate3d(0px,-20px,0px) scale(0.5);
     opacity: 0;
   }
-
   9810 {
     visibility: hidden;
-    transform: translate3d(0px, -20px, 0px) scale(0.5);
+    transform: translate3d(0px,-20px,0px) scale(0.5);
     opacity: 0;
   }
 }
@@ -967,31 +853,27 @@ p.end {
 @-skrollr-keyframes heartSmall {
   8990 {
     visibility: hidden;
-    transform: translate3d(0px, 10px, 0px) scale(0.5);
+    transform: translate3d(0px,10px,0px) scale(0.5);
     opacity: 0;
   }
-
   9000 {
     visibility: visible;
-    transform: translate3d(0px, 10px, 0px) scale(0.5);
+    transform: translate3d(0px,10px,0px) scale(0.5);
     opacity: 0;
   }
-
   9300 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px) scale(1);
+    transform: translate3d(0px,0px,0px) scale(1);
     opacity: 1;
   }
-
   9500 {
     visibility: visible;
-    transform: translate3d(0px, -4px, 0px) scale(0.5);
+    transform: translate3d(0px,-4px,0px) scale(0.5);
     opacity: 0;
   }
-
   9510 {
     visibility: hidden;
-    transform: translate3d(0px, -4px, 0px) scale(0.5);
+    transform: translate3d(0px,-4px,0px) scale(0.5);
     opacity: 0;
   }
 }
@@ -1004,35 +886,31 @@ p.end {
   9190 {
     visibility: hidden;
     stroke-dashoffset: 580;
-    transform: translate3d(0px, 10px, 0px) scale(0.5);
+    transform: translate3d(0px,10px,0px) scale(0.5);
     opacity: 1;
   }
-
   9200 {
     visibility: visible;
     stroke-dashoffset: 580;
-    transform: translate3d(0px, 10px, 0px) scale(0.5);
+    transform: translate3d(0px,10px,0px) scale(0.5);
     opacity: 1;
   }
-
   9800 {
     visibility: visible;
     stroke-dashoffset: 0;
-    transform: translate3d(0px, 0px, 0px) scale(1);
+    transform: translate3d(0px,0px,0px) scale(1);
     opacity: 1;
   }
-
   10500 {
     visibility: visible;
     stroke-dashoffset: 580;
-    transform: translate3d(0px, -2px, 0px) scale(0.5);
+    transform: translate3d(0px,-2px,0px) scale(0.5);
     opacity: 0;
   }
-
   10510 {
     visibility: hidden;
     stroke-dashoffset: 580;
-    transform: translate3d(0px, -2px, 0px) scale(0.5);
+    transform: translate3d(0px,-2px,0px) scale(0.5);
     opacity: 0;
   }
 }
@@ -1044,31 +922,27 @@ p.end {
 @-skrollr-keyframes lalala {
   11330 {
     visibility: hidden;
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px,0px,0px);
     opacity: 0;
   }
-
   11340 {
     visibility: visible;
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px,0px,0px);
     opacity: 0;
   }
-
   12100 {
     visibility: visible;
-    transform: translate3d(20px, -5px, 0px);
+    transform: translate3d(20px,-5px,0px);
     opacity: 1;
   }
-
   12600 {
     visibility: visible;
-    transform: translate3d(25px, -8px, 0px);
+    transform: translate3d(25px,-8px,0px);
     opacity: 0;
   }
-
   12610 {
     visibility: hidden;
-    transform: translate3d(25px, -8px, 0px);
+    transform: translate3d(25px,-8px,0px);
     opacity: 0;
   }
 }
@@ -1081,35 +955,31 @@ p.end {
   13900 {
     visibility: hidden;
     stroke-dashoffset: 430;
-    transform: scale(0.5) translate3d(0px, 0px, 0px);
+    transform: scale(0.5) translate3d(0px,0px,0px);
     opacity: 0;
   }
-
   14000 {
     visibility: visible;
     stroke-dashoffset: 430;
-    transform: scale(0.5) translate3d(0px, 0px, 0px);
+    transform: scale(0.5) translate3d(0px,0px,0px);
     opacity: 0;
   }
-
   15000 {
     visibility: visible;
     stroke-dashoffset: 0;
-    transform: scale(3) translate3d(20px, -5px, 0px);
+    transform: scale(3) translate3d(20px,-5px,0px);
     opacity: 1;
   }
-
   15900 {
     visibility: visible;
     stroke-dashoffset: 430;
-    transform: scale(0.5) translate3d(-10px, -8px, 0px);
+    transform: scale(0.5) translate3d(-10px,-8px,0px);
     opacity: 0;
   }
-
   15910 {
     visibility: hidden;
     stroke-dashoffset: 430;
-    transform: scale(0.5) translate3d(-10px, -8px, 0px);
+    transform: scale(0.5) translate3d(-10px,-8px,0px);
     opacity: 0;
   }
 }
@@ -1125,28 +995,24 @@ p.end {
     transform: scale(0.5) rotate(0deg) translateZ(0px);
     opacity: 0;
   }
-
   16100 {
     visibility: visible;
     stroke-dashoffset: 300;
     transform: scale(0.5) rotate(0deg) translateZ(0px);
     opacity: 0;
   }
-
   17100 {
     visibility: visible;
     stroke-dashoffset: 0;
     transform: scale(2.5) rotate(-20deg) translateZ(0px);
     opacity: 1;
   }
-
   17800 {
     visibility: visible;
     stroke-dashoffset: 300;
     transform: scale(1.25) rotate(-5deg) translateZ(0px);
     opacity: 0;
   }
-
   17810 {
     visibility: hidden;
     stroke-dashoffset: 300;
@@ -1163,35 +1029,31 @@ p.end {
   17590 {
     visibility: hidden;
     stroke-dashoffset: 350;
-    transform: scale(0.5) rotate(0deg) translate3d(0px, 0px, 0px);
+    transform: scale(0.5) rotate(0deg) translate3d(0px,0px,0px);
     opacity: 0;
   }
-
   17600 {
     visibility: visible;
     stroke-dashoffset: 350;
-    transform: scale(0.5) rotate(0deg) translate3d(0px, 0px, 0px);
+    transform: scale(0.5) rotate(0deg) translate3d(0px,0px,0px);
     opacity: 0;
   }
-
   18200 {
     visibility: visible;
     stroke-dashoffset: 0;
-    transform: scale(1.25) rotate(-20deg) translate3d(0px, -30px, 0px);
+    transform: scale(1.25) rotate(-20deg) translate3d(0px,-30px,0px);
     opacity: 1;
   }
-
   18800 {
     visibility: visible;
     stroke-dashoffset: 350;
-    transform: scale(1.25) rotate(-5deg) translate3d(0px, -50px, 0px);
+    transform: scale(1.25) rotate(-5deg) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   18810 {
     visibility: hidden;
     stroke-dashoffset: 350;
-    transform: scale(1.25) rotate(-5deg) translate3d(0px, -50px, 0px);
+    transform: scale(1.25) rotate(-5deg) translate3d(0px,-50px,0px);
     opacity: 0;
   }
 }
@@ -1203,31 +1065,27 @@ p.end {
 @-skrollr-keyframes smallBiz {
   18090 {
     visibility: hidden;
-    transform: scale(0.5) translate3d(0px, -50px, 0px);
+    transform: scale(0.5) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   18100 {
     visibility: visible;
-    transform: scale(0.5) translate3d(0px, -50px, 0px);
+    transform: scale(0.5) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   18600 {
     visibility: visible;
-    transform: scale(1.25) translate3d(0px, 0px, 0px);
+    transform: scale(1.25) translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   18900 {
     visibility: visible;
-    transform: scale(1.25) translate3d(0px, 0px, 0px);
+    transform: scale(1.25) translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   19200 {
     visibility: hidden;
-    transform: scale(0.75) translate3d(0px, 10px, 0px);
+    transform: scale(0.75) translate3d(0px,10px,0px);
     opacity: 0;
   }
 }
@@ -1239,37 +1097,32 @@ p.end {
 @-skrollr-keyframes online {
   18690 {
     visibility: hidden;
-    transform: scale(0.5) translate3d(0px, -50px, 0px);
+    transform: scale(0.5) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   18700 {
     visibility: visible;
-    transform: scale(0.5) translate3d(0px, -50px, 0px);
+    transform: scale(0.5) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   19100 {
     visibility: visible;
-    transform: scale(1.25) translate3d(0px, 0px, 0px);
+    transform: scale(1.25) translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   19300 {
     visibility: visible;
-    transform: scale(1.25) translate3d(0px, 0px, 0px);
+    transform: scale(1.25) translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   19500 {
     visibility: visible;
-    transform: scale(0.75) translate3d(0px, 10px, 0px);
+    transform: scale(0.75) translate3d(0px,10px,0px);
     opacity: 0;
   }
-
   19510 {
     visibility: hidden;
-    transform: scale(0.75) translate3d(0px, 10px, 0px);
+    transform: scale(0.75) translate3d(0px,10px,0px);
     opacity: 0;
   }
 }
@@ -1281,37 +1134,32 @@ p.end {
 @-skrollr-keyframes bigBiz {
   19090 {
     visibility: hidden;
-    transform: scale(0.5) translate3d(0px, -50px, 0px);
+    transform: scale(0.5) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   19100 {
     visibility: visible;
-    transform: scale(0.5) translate3d(0px, -50px, 0px);
+    transform: scale(0.5) translate3d(0px,-50px,0px);
     opacity: 0;
   }
-
   19300 {
     visibility: visible;
-    transform: scale(1.25) translate3d(0px, 0px, 0px);
+    transform: scale(1.25) translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   19400 {
     visibility: visible;
-    transform: scale(1.25) translate3d(0px, 0px, 0px);
+    transform: scale(1.25) translate3d(0px,0px,0px);
     opacity: 1;
   }
-
   19600 {
     visibility: visible;
-    transform: scale(0.75) translate3d(0px, 10px, 0px);
+    transform: scale(0.75) translate3d(0px,10px,0px);
     opacity: 0;
   }
-
   19610 {
     visibility: hidden;
-    transform: scale(0.75) translate3d(0px, 10px, 0px);
+    transform: scale(0.75) translate3d(0px,10px,0px);
     opacity: 0;
   }
 }

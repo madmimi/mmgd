@@ -151,7 +151,7 @@
             = Haml::Engine.new(File.read('/Server/mmgd/public/images/big_biz.min.svg')).render
           #online
             = Haml::Engine.new(File.read('/Server/mmgd/public/images/online.min.svg')).render
-      %a.chevron_down{:href => '#', :alt => "Scroll Down", :"data-anchor-target" => "#step-12"}
+      .chevron_down{:"data-anchor-target" => "#step-12"}
         %img{:src=> "images/chevron_down.min.svg"}
     #skrollr-body
       %section#step-1

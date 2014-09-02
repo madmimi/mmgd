@@ -89,12 +89,12 @@ module.exports = function(grunt) {
       },
       skrollrCSSPublic: {
         files: [
-        {src: ['src/skrollr.blank.css'], dest: 'public/stylesheets/skrollr.css'},
+        {src: ['src/skrollr.css'], dest: 'public/stylesheets/skrollr.css'},
         ]
       },
       skrollrCSSDev: {
         files: [
-        {src: ['src/skrollr.blank.css'], dest: 'dev/stylesheets/skrollr.css'},
+        {src: ['src/skrollr.css'], dest: 'dev/stylesheets/skrollr.css'},
         ]
       }
     },
@@ -234,7 +234,7 @@ module.exports = function(grunt) {
         tasks: ['copy:jsonPublic']
       },
       copy_scrollr: {
-        files: ['src/skrollr.blank.css'],
+        files: ['src/skrollr.css'],
         tasks: ['copy:skrollrCSSDev', 'copy:skrollrCSSPublic']
       },
       svgmin: {
