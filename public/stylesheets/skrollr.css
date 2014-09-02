@@ -18,7 +18,7 @@ p.standard {
   center-top {
     visibility: visible;
     opacity: 1;
-    transform: translate3d(0px, 8px, 0px);
+    transform: translate3d(0px, 0px, 0px);
   }
 
   center {
@@ -30,7 +30,7 @@ p.standard {
   250-center-bottom {
     visibility: visible;
     opacity: 1;
-    transform: translate3d(0px, -8px, 0px);
+    transform: translate3d(0px, 0px, 0px);
   }
 
   center-bottom {
